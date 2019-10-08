@@ -87,6 +87,30 @@
     <Compile Include="CustomerForm.Designer.cs">
       <DependentUpon>CustomerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DishComboForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DishComboForm.Designer.cs">
+      <DependentUpon>DishComboForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DishForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DishForm.Designer.cs">
+      <DependentUpon>DishForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeForm.Designer.cs">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraServiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtraServiceForm.Designer.cs">
+      <DependentUpon>ExtraServiceForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +136,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerForm.resx">
       <DependentUpon>CustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DishComboForm.resx">
+      <DependentUpon>DishComboForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DishForm.resx">
+      <DependentUpon>DishForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeForm.resx">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtraServiceForm.resx">
+      <DependentUpon>ExtraServiceForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

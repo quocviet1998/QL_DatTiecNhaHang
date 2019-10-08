@@ -27,5 +27,20 @@ namespace QL_DatTiecNhaHang
         {
 
         }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

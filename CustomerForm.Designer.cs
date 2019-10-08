@@ -30,7 +30,6 @@
         {
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.checkedComboBoxEdit1 = new DevExpress.XtraEditors.CheckedComboBoxEdit();
             this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
@@ -48,7 +47,6 @@
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
@@ -72,15 +70,6 @@
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Size = new System.Drawing.Size(203, 22);
             this.textEdit1.TabIndex = 1;
-            // 
-            // checkedComboBoxEdit1
-            // 
-            this.checkedComboBoxEdit1.Location = new System.Drawing.Point(952, 148);
-            this.checkedComboBoxEdit1.Name = "checkedComboBoxEdit1";
-            this.checkedComboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.checkedComboBoxEdit1.Size = new System.Drawing.Size(125, 22);
-            this.checkedComboBoxEdit1.TabIndex = 2;
             // 
             // comboBoxEdit1
             // 
@@ -179,33 +168,36 @@
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(100, 172);
+            this.simpleButton1.Location = new System.Drawing.Point(379, 146);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(94, 29);
+            this.simpleButton1.Size = new System.Drawing.Size(94, 46);
             this.simpleButton1.TabIndex = 14;
             this.simpleButton1.Text = "Thêm";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(209, 172);
+            this.simpleButton2.Location = new System.Drawing.Point(671, 146);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(94, 29);
+            this.simpleButton2.Size = new System.Drawing.Size(94, 46);
             this.simpleButton2.TabIndex = 15;
             this.simpleButton2.Text = "Xóa";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // simpleButton3
             // 
-            this.simpleButton3.Location = new System.Drawing.Point(325, 172);
+            this.simpleButton3.Location = new System.Drawing.Point(918, 146);
             this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(94, 29);
+            this.simpleButton3.Size = new System.Drawing.Size(94, 46);
             this.simpleButton3.TabIndex = 16;
             this.simpleButton3.Text = "Sửa";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // simpleButton4
             // 
-            this.simpleButton4.Location = new System.Drawing.Point(447, 172);
+            this.simpleButton4.Location = new System.Drawing.Point(100, 146);
             this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(94, 29);
+            this.simpleButton4.Size = new System.Drawing.Size(94, 46);
             this.simpleButton4.TabIndex = 17;
             this.simpleButton4.Text = "Tìm kiếm";
             // 
@@ -229,14 +221,12 @@
             this.Controls.Add(this.textEdit2);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.comboBoxEdit1);
-            this.Controls.Add(this.checkedComboBoxEdit1);
             this.Controls.Add(this.textEdit1);
             this.Controls.Add(this.labelControl1);
             this.Name = "CustomerForm";
             this.Text = "CustomerForm";
             this.Load += new System.EventHandler(this.CustomerForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
@@ -253,7 +243,6 @@
 
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.CheckedComboBoxEdit checkedComboBoxEdit1;
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit textEdit2;
