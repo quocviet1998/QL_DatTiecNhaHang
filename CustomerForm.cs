@@ -25,7 +25,14 @@ namespace QL_DatTiecNhaHang
 
         private void CustomerForm_Load(object sender, EventArgs e)
         {
+            loadDB();
+        }
 
+        private void loadDB()
+        {
+            DataSourceDataContext db = new DataSourceDataContext();
+            var dsNhanVien = db.NHANVIENs.ToString();
+            gridControl1.DataSource = dsNhanVien;
         }
 
         private void simpleButton1_Click(object sender, EventArgs e)

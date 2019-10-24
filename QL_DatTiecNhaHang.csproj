@@ -67,6 +67,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -90,6 +91,11 @@
     </Compile>
     <Compile Include="CustomerForm.Designer.cs">
       <DependentUpon>CustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSource.dbml</DependentUpon>
     </Compile>
     <Compile Include="dbQLNHCode\BOPHAN.cs" />
     <Compile Include="dbQLNHCode\BOPHAN.Designer.cs">
@@ -264,6 +270,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLDatTiecNhaHangDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLDatTiecNhaHangDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UCCalendar.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -314,10 +325,76 @@
       <DependentUpon>UCCalendar.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="DataSource.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataSource.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSource.dbml.layout">
+      <DependentUpon>DataSource.dbml</DependentUpon>
+    </None>
     <None Include="dbQLNH.xpo" />
     <None Include="dbQLNH.xpo.diagram">
       <DependentUpon>dbQLNH.xpo</DependentUpon>
     </None>
+    <None Include="Properties\DataSources\BookingDetailForm.datasource" />
+    <None Include="Properties\DataSources\CustomerForm.datasource" />
+    <None Include="Properties\DataSources\DishComboForm.datasource" />
+    <None Include="Properties\DataSources\DishForm.datasource" />
+    <None Include="Properties\DataSources\EmployeeForm.datasource" />
+    <None Include="Properties\DataSources\ExtraServiceForm.datasource" />
+    <None Include="Properties\DataSources\FluentDesignForm.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\FluentDesignForm.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\LoginForm.datasource" />
+    <None Include="Properties\DataSources\MainForm.datasource" />
+    <None Include="Properties\DataSources\MessageBoxConst.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\QliDatTiec.DrinkForm.datasource" />
+    <None Include="Properties\DataSources\QliDatTiec.OtherServiceForm.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.CustomClasses.LoginResult.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.CustomClasses.QLNguoiDung.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.BOPHAN.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.BOPHAN_InsResult.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.BOPHAN_UpdResult.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.COMBO_MONAN.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.ConnectionHelper.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.CT_DT_DU+CompoundKey1Struct.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.CT_DT_DU.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.CT_DT_DV+CompoundKey1Struct.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.CT_DT_DV.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.CT_DT_MA+CompoundKey1Struct.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.CT_DT_MA.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.CT_DT_NV+CompoundKey1Struct.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.CT_DT_NV.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.CT_DT_ST+CompoundKey1Struct.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.CT_DT_ST.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.CT_MA_CBMA+CompoundKey1Struct.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.CT_MA_CBMA.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.CT_ND_NND+CompoundKey1Struct.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.CT_ND_NND.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.CT_PHATSINH.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.DANGNHAPResult.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.DATTIEC.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.DICHVU.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.DICHVU_UpdResult.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.DODUNG.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.DOUONG.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.HOADON.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.KHACHHANG.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.LOAIDOUONG.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.LOAIMONAN.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.LOAITIEC.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.MANHINH.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.MONAN.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.NGUOIDUNG.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.NHANVIEN.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.NHOMNGUOIDUNG.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.PHANQUYEN+CompoundKey1Struct.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.PHANQUYEN.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.SANHTIEC.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.SprocHelper.datasource" />
+    <None Include="Properties\DataSources\QL_DatTiecNhaHang.QLDatTiecNhaHang.SYSDIAGRAMS.datasource" />
+    <None Include="Properties\DataSources\UCCalendar.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -327,6 +404,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QLDatTiecNhaHangDataSet.xsc">
+      <DependentUpon>QLDatTiecNhaHangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLDatTiecNhaHangDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLDatTiecNhaHangDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLDatTiecNhaHangDataSet.xss">
+      <DependentUpon>QLDatTiecNhaHangDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
@@ -339,6 +427,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
