@@ -49,104 +49,123 @@
             // 
             // simpleButton3
             // 
-            this.simpleButton3.Location = new System.Drawing.Point(823, 109);
+            this.simpleButton3.Location = new System.Drawing.Point(705, 89);
+            this.simpleButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(94, 53);
+            this.simpleButton3.Size = new System.Drawing.Size(81, 43);
             this.simpleButton3.TabIndex = 38;
             this.simpleButton3.Text = "Sửa";
             // 
             // simpleButton4
             // 
-            this.simpleButton4.Location = new System.Drawing.Point(581, 109);
+            this.simpleButton4.Location = new System.Drawing.Point(498, 89);
+            this.simpleButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(94, 53);
+            this.simpleButton4.Size = new System.Drawing.Size(81, 43);
             this.simpleButton4.TabIndex = 37;
             this.simpleButton4.Text = "Xóa";
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(358, 109);
+            this.simpleButton2.Location = new System.Drawing.Point(307, 89);
+            this.simpleButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(94, 53);
+            this.simpleButton2.Size = new System.Drawing.Size(81, 43);
             this.simpleButton2.TabIndex = 36;
             this.simpleButton2.Text = "Thêm";
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(122, 109);
+            this.simpleButton1.Location = new System.Drawing.Point(105, 89);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(94, 53);
+            this.simpleButton1.Size = new System.Drawing.Size(81, 43);
             this.simpleButton1.TabIndex = 35;
             this.simpleButton1.Text = "Tìm kiếm";
             // 
             // textEdit5
             // 
-            this.textEdit5.Location = new System.Drawing.Point(122, 61);
+            this.textEdit5.Location = new System.Drawing.Point(105, 50);
+            this.textEdit5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Size = new System.Drawing.Size(795, 22);
+            this.textEdit5.Size = new System.Drawing.Size(681, 20);
             this.textEdit5.TabIndex = 32;
             // 
             // labelControl6
             // 
-            this.labelControl6.Location = new System.Drawing.Point(41, 64);
+            this.labelControl6.Location = new System.Drawing.Point(35, 52);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(42, 16);
+            this.labelControl6.Size = new System.Drawing.Size(35, 13);
             this.labelControl6.TabIndex = 31;
             this.labelControl6.Text = "Ghi chú";
             // 
             // textEdit2
             // 
-            this.textEdit2.Location = new System.Drawing.Point(642, 33);
+            this.textEdit2.Location = new System.Drawing.Point(550, 27);
+            this.textEdit2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textEdit2.Name = "textEdit2";
+            // 
+            // 
+            // 
             this.textEdit2.Properties.Mask.EditMask = "d";
             this.textEdit2.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTime;
-            this.textEdit2.Size = new System.Drawing.Size(275, 22);
+            this.textEdit2.Size = new System.Drawing.Size(236, 20);
             this.textEdit2.TabIndex = 24;
             // 
             // textEdit1
             // 
-            this.textEdit1.Location = new System.Drawing.Point(122, 36);
+            this.textEdit1.Location = new System.Drawing.Point(105, 29);
+            this.textEdit1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(275, 22);
+            this.textEdit1.Size = new System.Drawing.Size(236, 20);
             this.textEdit1.TabIndex = 22;
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(41, 39);
+            this.labelControl1.Location = new System.Drawing.Point(35, 32);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(71, 16);
+            this.labelControl1.Size = new System.Drawing.Size(59, 13);
             this.labelControl1.TabIndex = 21;
             this.labelControl1.Text = "Tên dịch vụ";
             // 
             // gridView1
             // 
+            this.gridView1.DetailHeight = 284;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
             // gridControl1
             // 
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gridControl1.Location = new System.Drawing.Point(0, 200);
+            // 
+            // 
+            // 
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl1.Location = new System.Drawing.Point(0, 142);
             this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(972, 512);
+            this.gridControl1.Size = new System.Drawing.Size(833, 416);
             this.gridControl1.TabIndex = 20;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(561, 36);
+            this.labelControl2.Location = new System.Drawing.Point(481, 29);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(44, 16);
+            this.labelControl2.Size = new System.Drawing.Size(37, 13);
             this.labelControl2.TabIndex = 23;
             this.labelControl2.Text = "Đơn giá";
             // 
             // ExtraServiceForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(972, 712);
+            this.ClientSize = new System.Drawing.Size(833, 558);
             this.Controls.Add(this.simpleButton3);
             this.Controls.Add(this.simpleButton4);
             this.Controls.Add(this.simpleButton2);
@@ -158,8 +177,11 @@
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.gridControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ExtraServiceForm";
             this.Text = "ExtraServiceForm";
+            this.Load += new System.EventHandler(this.ExtraServiceForm_Load);
+            //this.Click += new System.EventHandler(this.ExtraServiceForm_Click);
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();

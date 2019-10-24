@@ -54,7 +54,7 @@
             this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
             this.fluentDesignFormControl1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1160, 30);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1160, 27);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             // 
@@ -69,52 +69,52 @@
             this.viewToolStripMenuItem,
             this.windowsToolStripMenuItem,
             this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 30);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 27);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1160, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1160, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // sơĐồĐặtSảnhToolStripMenuItem
             // 
             this.sơĐồĐặtSảnhToolStripMenuItem.Name = "sơĐồĐặtSảnhToolStripMenuItem";
-            this.sơĐồĐặtSảnhToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.sơĐồĐặtSảnhToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.sơĐồĐặtSảnhToolStripMenuItem.Text = "Hệ thống";
             // 
             // lễTânToolStripMenuItem
             // 
             this.lễTânToolStripMenuItem.Name = "lễTânToolStripMenuItem";
-            this.lễTânToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
+            this.lễTânToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
             this.lễTânToolStripMenuItem.Text = "Lễ tân";
             // 
             // càiĐặtToolStripMenuItem
             // 
             this.càiĐặtToolStripMenuItem.Name = "càiĐặtToolStripMenuItem";
-            this.càiĐặtToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+            this.càiĐặtToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.càiĐặtToolStripMenuItem.Text = "Cài đặt";
             // 
             // báoCáoToolStripMenuItem
             // 
             this.báoCáoToolStripMenuItem.Name = "báoCáoToolStripMenuItem";
-            this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
+            this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.báoCáoToolStripMenuItem.Text = "Báo cáo";
             // 
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.viewToolStripMenuItem.Text = "View";
             // 
             // windowsToolStripMenuItem
             // 
             this.windowsToolStripMenuItem.Name = "windowsToolStripMenuItem";
-            this.windowsToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
+            this.windowsToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.windowsToolStripMenuItem.Text = "Windows";
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // schedulerDataStorage1
@@ -132,7 +132,7 @@
             this.Appearance.Options.UseBackColor = true;
             this.Appearance.Options.UseForeColor = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1160, 836);
+            this.ClientSize = new System.Drawing.Size(1160, 783);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.fluentDesignFormControl1);
             this.FluentDesignFormControl = this.fluentDesignFormControl1;

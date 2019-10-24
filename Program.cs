@@ -28,17 +28,11 @@ namespace QL_DatTiecNhaHang
             //}
 
 
-
-
-
-
-
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
             BonusSkins.Register();
-            Application.Run(new LoginForm());
+            Application.Run(new ExtraServiceForm());
         }
     }
 }

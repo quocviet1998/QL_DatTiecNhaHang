@@ -15,7 +15,11 @@ namespace QL_DatTiecNhaHang
     public partial class LoginForm : DevExpress.XtraEditors.XtraForm
     {
         private int status;
-        public int Status { get => status; set => status = value; }
+        public int Status 
+        {
+            get { return status;} 
+            set { status = value;}
+        }
 
         public LoginForm()
         {

@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLDatTiecNhaHang" Class="DataSourceDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=desktop-mi5n6jd\sqlexpress;Initial Catalog=QLDatTiecNhaHang;User ID=sa" SettingsObjectName="QL_DatTiecNhaHang.Properties.Settings" SettingsPropertyName="QLDatTiecNhaHangConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.BOPHAN" Member="BOPHANs">
+    <Type Name="BOPHAN">
+      <Column Name="IdBP" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenBP" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="GhiChu" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="BOPHAN_NHANVIEN" Member="NHANVIENs" ThisKey="IdBP" OtherKey="IdBP" Type="NHANVIEN" />
+    </Type>
+  </Table>
+  <Table Name="dbo.COMBO_MONAN" Member="COMBO_MONANs">
+    <Type Name="COMBO_MONAN">
+      <Column Name="IdCBMA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GhiChu" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="COMBO_MONAN_CT_MA_CBMA" Member="CT_MA_CBMAs" ThisKey="IdCBMA" OtherKey="IdCBMA" Type="CT_MA_CBMA" />
+      <Association Name="COMBO_MONAN_DATTIEC" Member="DATTIECs" ThisKey="IdCBMA" OtherKey="IdCBMA" Type="DATTIEC" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CT_DT_DU" Member="CT_DT_DUs">
+    <Type Name="CT_DT_DU">
+      <Column Name="IdDT" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdDU" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SL_DU" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SL_DU_PS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="DATTIEC_CT_DT_DU" Member="DATTIEC" ThisKey="IdDT" OtherKey="IdDT" Type="DATTIEC" IsForeignKey="true" />
+      <Association Name="DOUONG_CT_DT_DU" Member="DOUONG" ThisKey="IdDU" OtherKey="IdDU" Type="DOUONG" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOAIMONAN" Member="LOAIMONANs">
+    <Type Name="LOAIMONAN">
+      <Column Name="IdLMA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenLMA" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="GhiChu" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="LOAIMONAN_MONAN" Member="MONANs" ThisKey="IdLMA" OtherKey="IdLMA" Type="MONAN" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CT_DT_DV" Member="CT_DT_DVs">
+    <Type Name="CT_DT_DV">
+      <Column Name="IdDV" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdDT" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="DATTIEC_CT_DT_DV" Member="DATTIEC" ThisKey="IdDT" OtherKey="IdDT" Type="DATTIEC" IsForeignKey="true" />
+      <Association Name="DICHVU_CT_DT_DV" Member="DICHVU" ThisKey="IdDV" OtherKey="IdDV" Type="DICHVU" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CT_DT_MA" Member="CT_DT_MAs">
+    <Type Name="CT_DT_MA">
+      <Column Name="IdMA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdDT" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SoLuongMA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SoLuongMA_PS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="DATTIEC_CT_DT_MA" Member="DATTIEC" ThisKey="IdDT" OtherKey="IdDT" Type="DATTIEC" IsForeignKey="true" />
+      <Association Name="MONAN_CT_DT_MA" Member="MONAN" ThisKey="IdMA" OtherKey="IdMA" Type="MONAN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CT_DT_NV" Member="CT_DT_NVs">
+    <Type Name="CT_DT_NV">
+      <Column Name="IdNV" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdDT" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="DATTIEC_CT_DT_NV" Member="DATTIEC" ThisKey="IdDT" OtherKey="IdDT" Type="DATTIEC" IsForeignKey="true" />
+      <Association Name="NHANVIEN_CT_DT_NV" Member="NHANVIEN" ThisKey="IdNV" OtherKey="IdNV" Type="NHANVIEN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CT_DT_ST" Member="CT_DT_STs">
+    <Type Name="CT_DT_ST">
+      <Column Name="IdST" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdDT" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SoBanDat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SoBanPS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="DATTIEC_CT_DT_ST" Member="DATTIEC" ThisKey="IdDT" OtherKey="IdDT" Type="DATTIEC" IsForeignKey="true" />
+      <Association Name="SANHTIEC_CT_DT_ST" Member="SANHTIEC" ThisKey="IdST" OtherKey="IdST" Type="SANHTIEC" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CT_MA_CBMA" Member="CT_MA_CBMAs">
+    <Type Name="CT_MA_CBMA">
+      <Column Name="IdMA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdCBMA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="COMBO_MONAN_CT_MA_CBMA" Member="COMBO_MONAN" ThisKey="IdCBMA" OtherKey="IdCBMA" Type="COMBO_MONAN" IsForeignKey="true" />
+      <Association Name="MONAN_CT_MA_CBMA" Member="MONAN" ThisKey="IdMA" OtherKey="IdMA" Type="MONAN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CT_ND_NND" Member="CT_ND_NNDs">
+    <Type Name="CT_ND_NND">
+      <Column Name="IdNND" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenDangNhap" Type="System.String" DbType="VarChar(16) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="GhiChu" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="NGUOIDUNG_CT_ND_NND" Member="NGUOIDUNG" ThisKey="TenDangNhap" OtherKey="TenDangNhap" Type="NGUOIDUNG" IsForeignKey="true" />
+      <Association Name="NHOMNGUOIDUNG_CT_ND_NND" Member="NHOMNGUOIDUNG" ThisKey="IdNND" OtherKey="IdNND" Type="NHOMNGUOIDUNG" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CT_PHATSINH" Member="CT_PHATSINHs">
+    <Type Name="CT_PHATSINH">
+      <Column Name="IdDT" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdDU" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdMA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdDD" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdDV" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SL_DU_PS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SL_MA_PS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SL_DD_PS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SL_DV_PS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="DICHVU_CT_PHATSINH" Member="DICHVU" ThisKey="IdDV" OtherKey="IdDV" Type="DICHVU" IsForeignKey="true" />
+      <Association Name="DODUNG_CT_PHATSINH" Member="DODUNG" ThisKey="IdDD" OtherKey="IdDD" Type="DODUNG" IsForeignKey="true" />
+      <Association Name="DOUONG_CT_PHATSINH" Member="DOUONG" ThisKey="IdDU" OtherKey="IdDU" Type="DOUONG" IsForeignKey="true" />
+      <Association Name="MONAN_CT_PHATSINH" Member="MONAN" ThisKey="IdMA" OtherKey="IdMA" Type="MONAN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DATTIEC" Member="DATTIECs">
+    <Type Name="DATTIEC">
+      <Column Name="IdDT" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdKH" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdLT" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdCBMA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NgayDT" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="TenChuRe" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TenCoDau" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SLKhach" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SLNhanVien" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ThoiGianBD" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="GhiChu" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="DATTIEC_CT_DT_DU" Member="CT_DT_DUs" ThisKey="IdDT" OtherKey="IdDT" Type="CT_DT_DU" />
+      <Association Name="DATTIEC_CT_DT_DV" Member="CT_DT_DVs" ThisKey="IdDT" OtherKey="IdDT" Type="CT_DT_DV" />
+      <Association Name="DATTIEC_CT_DT_MA" Member="CT_DT_MAs" ThisKey="IdDT" OtherKey="IdDT" Type="CT_DT_MA" />
+      <Association Name="DATTIEC_CT_DT_NV" Member="CT_DT_NVs" ThisKey="IdDT" OtherKey="IdDT" Type="CT_DT_NV" />
+      <Association Name="DATTIEC_CT_DT_ST" Member="CT_DT_STs" ThisKey="IdDT" OtherKey="IdDT" Type="CT_DT_ST" />
+      <Association Name="DATTIEC_HOADON" Member="HOADONs" ThisKey="IdDT" OtherKey="IdDT" Type="HOADON" />
+      <Association Name="COMBO_MONAN_DATTIEC" Member="COMBO_MONAN" ThisKey="IdCBMA" OtherKey="IdCBMA" Type="COMBO_MONAN" IsForeignKey="true" />
+      <Association Name="KHACHHANG_DATTIEC" Member="KHACHHANG" ThisKey="IdKH" OtherKey="IdKH" Type="KHACHHANG" IsForeignKey="true" />
+      <Association Name="LOAITIEC_DATTIEC" Member="LOAITIEC" ThisKey="IdLT" OtherKey="IdLT" Type="LOAITIEC" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DICHVU" Member="DICHVUs">
+    <Type Name="DICHVU">
+      <Column Name="IdDV" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenDV" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="DonGiaDV" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="GhiChu" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="DICHVU_CT_DT_DV" Member="CT_DT_DVs" ThisKey="IdDV" OtherKey="IdDV" Type="CT_DT_DV" />
+      <Association Name="DICHVU_CT_PHATSINH" Member="CT_PHATSINHs" ThisKey="IdDV" OtherKey="IdDV" Type="CT_PHATSINH" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DODUNG" Member="DODUNGs">
+    <Type Name="DODUNG">
+      <Column Name="IdDD" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenDD" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ChiPhiDD" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Association Name="DODUNG_CT_PHATSINH" Member="CT_PHATSINHs" ThisKey="IdDD" OtherKey="IdDD" Type="CT_PHATSINH" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DOUONG" Member="DOUONGs">
+    <Type Name="DOUONG">
+      <Column Name="IdDU" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenDU" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="DVT" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DonGia" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="DonGia_PS" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="GhiChu" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="IdLDU" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="DOUONG_CT_DT_DU" Member="CT_DT_DUs" ThisKey="IdDU" OtherKey="IdDU" Type="CT_DT_DU" />
+      <Association Name="DOUONG_CT_PHATSINH" Member="CT_PHATSINHs" ThisKey="IdDU" OtherKey="IdDU" Type="CT_PHATSINH" />
+      <Association Name="LOAIDOUONG_DOUONG" Member="LOAIDOUONG" ThisKey="IdLDU" OtherKey="IdLDU" Type="LOAIDOUONG" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HOADON" Member="HOADONs">
+    <Type Name="HOADON">
+      <Column Name="IdHD" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TongTien" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="DatCoc" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="NgayDatCoc" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="NgayThanhToan" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdDT" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="DATTIEC_HOADON" Member="DATTIEC" ThisKey="IdDT" OtherKey="IdDT" Type="DATTIEC" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KHACHHANG" Member="KHACHHANGs">
+    <Type Name="KHACHHANG">
+      <Column Name="IdKH" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HoTenKH" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="NgaySinhKH" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="GioiTinhKH" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DiaChiKH" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="DienThoaiKH" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailKH" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GhiChu" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="KHACHHANG_DATTIEC" Member="DATTIECs" ThisKey="IdKH" OtherKey="IdKH" Type="DATTIEC" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOAIDOUONG" Member="LOAIDOUONGs">
+    <Type Name="LOAIDOUONG">
+      <Column Name="IdLDU" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenLDU" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="GhiChu" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="LOAIDOUONG_DOUONG" Member="DOUONGs" ThisKey="IdLDU" OtherKey="IdLDU" Type="DOUONG" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOAITIEC" Member="LOAITIECs">
+    <Type Name="LOAITIEC">
+      <Column Name="IdLT" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenLT" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Association Name="LOAITIEC_DATTIEC" Member="DATTIECs" ThisKey="IdLT" OtherKey="IdLT" Type="DATTIEC" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MANHINH" Member="MANHINHs">
+    <Type Name="MANHINH">
+      <Column Name="IdMH" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenMH" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="MANHINH_PHANQUYEN" Member="PHANQUYENs" ThisKey="IdMH" OtherKey="IdMH" Type="PHANQUYEN" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MONAN" Member="MONANs">
+    <Type Name="MONAN">
+      <Column Name="IdMA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenMA" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="DVT" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="DonGia" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="GhiChu" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="IdLMA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="MONAN_CT_DT_MA" Member="CT_DT_MAs" ThisKey="IdMA" OtherKey="IdMA" Type="CT_DT_MA" />
+      <Association Name="MONAN_CT_MA_CBMA" Member="CT_MA_CBMAs" ThisKey="IdMA" OtherKey="IdMA" Type="CT_MA_CBMA" />
+      <Association Name="MONAN_CT_PHATSINH" Member="CT_PHATSINHs" ThisKey="IdMA" OtherKey="IdMA" Type="CT_PHATSINH" />
+      <Association Name="LOAIMONAN_MONAN" Member="LOAIMONAN" ThisKey="IdLMA" OtherKey="IdLMA" Type="LOAIMONAN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NGUOIDUNG" Member="NGUOIDUNGs">
+    <Type Name="NGUOIDUNG">
+      <Column Name="TenDangNhap" Type="System.String" DbType="VarChar(16) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MatKhau" Type="System.String" DbType="VarChar(16) NOT NULL" CanBeNull="false" />
+      <Column Name="HoatDong" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IdNV" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="NGUOIDUNG_CT_ND_NND" Member="CT_ND_NNDs" ThisKey="TenDangNhap" OtherKey="TenDangNhap" Type="CT_ND_NND" />
+      <Association Name="NHANVIEN_NGUOIDUNG" Member="NHANVIEN" ThisKey="IdNV" OtherKey="IdNV" Type="NHANVIEN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NHANVIEN" Member="NHANVIENs">
+    <Type Name="NHANVIEN">
+      <Column Name="IdNV" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HoTenNV" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="NgaySinhNV" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="GioiTinhNV" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DiaChiNV" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="DienThoaiNV" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="GhiChuNV" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="IdBP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="NHANVIEN_CT_DT_NV" Member="CT_DT_NVs" ThisKey="IdNV" OtherKey="IdNV" Type="CT_DT_NV" />
+      <Association Name="NHANVIEN_NGUOIDUNG" Member="NGUOIDUNGs" ThisKey="IdNV" OtherKey="IdNV" Type="NGUOIDUNG" />
+      <Association Name="BOPHAN_NHANVIEN" Member="BOPHAN" ThisKey="IdBP" OtherKey="IdBP" Type="BOPHAN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NHOMNGUOIDUNG" Member="NHOMNGUOIDUNGs">
+    <Type Name="NHOMNGUOIDUNG">
+      <Column Name="IdNND" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenNND" Type="System.String" DbType="NChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="NHOMNGUOIDUNG_CT_ND_NND" Member="CT_ND_NNDs" ThisKey="IdNND" OtherKey="IdNND" Type="CT_ND_NND" />
+      <Association Name="NHOMNGUOIDUNG_PHANQUYEN" Member="PHANQUYENs" ThisKey="IdNND" OtherKey="IdNND" Type="PHANQUYEN" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PHANQUYEN" Member="PHANQUYENs">
+    <Type Name="PHANQUYEN">
+      <Column Name="IdNND" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdMH" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CoQuyen" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="MANHINH_PHANQUYEN" Member="MANHINH" ThisKey="IdMH" OtherKey="IdMH" Type="MANHINH" IsForeignKey="true" />
+      <Association Name="NHOMNGUOIDUNG_PHANQUYEN" Member="NHOMNGUOIDUNG" ThisKey="IdNND" OtherKey="IdNND" Type="NHOMNGUOIDUNG" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SANHTIEC" Member="SANHTIECs">
+    <Type Name="SANHTIEC">
+      <Column Name="IdST" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenST" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Tang" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="SoBan" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="DonGiaBan" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="GiaBanTiec_PS" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="GhiChu" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="SANHTIEC_CT_DT_ST" Member="CT_DT_STs" ThisKey="IdST" OtherKey="IdST" Type="CT_DT_ST" />
+    </Type>
+  </Table>
+</Database>

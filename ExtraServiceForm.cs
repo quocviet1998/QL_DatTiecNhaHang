@@ -17,5 +17,23 @@ namespace QL_DatTiecNhaHang
         {
             InitializeComponent();
         }
+
+        
+
+        private void ExtraServiceForm_Load(object sender, EventArgs e)
+        {
+            loadDB();
+        }
+        private void loadDB()
+        {
+            DataSourceDataContext db = new DataSourceDataContext();
+            var dsDichVu = db.DICHVUs.ToString();
+            gridControl1.DataSource = dsDichVu;
+        }
+
+        private void ExtraServiceForm_Click(object sender, DevExpress.XtraBars.ItemCancelEventArgs e)
+        {
+            
+        }
     }
 }
