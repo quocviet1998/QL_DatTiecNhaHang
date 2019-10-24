@@ -90,9 +90,10 @@
             // 
             // LoginForm
             // 
+            this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(404, 145);
+            this.ClientSize = new System.Drawing.Size(412, 153);
             this.ControlBox = false;
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogin);

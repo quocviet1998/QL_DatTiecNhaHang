@@ -30,8 +30,6 @@
         {
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textEdit12 = new DevExpress.XtraEditors.TextEdit();
@@ -71,11 +69,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.label1 = new System.Windows.Forms.Label();
+            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
             this.dropDownButton1 = new DevExpress.XtraEditors.DropDownButton();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
@@ -123,18 +121,6 @@
             this.xtraTabPage1.Name = "xtraTabPage1";
             this.xtraTabPage1.Size = new System.Drawing.Size(978, 509);
             this.xtraTabPage1.Text = "Thông tin đặt sảnh tiệc";
-            // 
-            // xtraTabPage2
-            // 
-            this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(958, 485);
-            this.xtraTabPage2.Text = "Dịch vụ tiệc";
-            // 
-            // xtraTabPage3
-            // 
-            this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(958, 485);
-            this.xtraTabPage3.Text = "Chi tiết hóa đơn";
             // 
             // groupBox3
             // 
@@ -517,6 +503,18 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Hình thức tiệc";
             // 
+            // xtraTabPage2
+            // 
+            this.xtraTabPage2.Name = "xtraTabPage2";
+            this.xtraTabPage2.Size = new System.Drawing.Size(978, 509);
+            this.xtraTabPage2.Text = "Dịch vụ tiệc";
+            // 
+            // xtraTabPage3
+            // 
+            this.xtraTabPage3.Name = "xtraTabPage3";
+            this.xtraTabPage3.Size = new System.Drawing.Size(978, 509);
+            this.xtraTabPage3.Text = "Chi tiết hóa đơn";
+            // 
             // simpleButton1
             // 
             this.simpleButton1.Location = new System.Drawing.Point(13, 561);
@@ -541,23 +539,6 @@
             this.simpleButton3.TabIndex = 3;
             this.simpleButton3.Text = "Hủy";
             // 
-            // simpleButton4
-            // 
-            this.simpleButton4.Location = new System.Drawing.Point(663, 561);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(94, 29);
-            this.simpleButton4.TabIndex = 6;
-            this.simpleButton4.Text = "simpleButton4";
-            this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
-            // 
-            // simpleButton5
-            // 
-            this.simpleButton5.Location = new System.Drawing.Point(548, 561);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(94, 29);
-            this.simpleButton5.TabIndex = 5;
-            this.simpleButton5.Text = "simpleButton5";
-            // 
             // simpleButton6
             // 
             this.simpleButton6.Location = new System.Drawing.Point(431, 561);
@@ -580,8 +561,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(985, 609);
             this.Controls.Add(this.dropDownButton1);
-            this.Controls.Add(this.simpleButton4);
-            this.Controls.Add(this.simpleButton5);
             this.Controls.Add(this.simpleButton6);
             this.Controls.Add(this.simpleButton3);
             this.Controls.Add(this.simpleButton2);
@@ -669,8 +648,6 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton5;
         private DevExpress.XtraEditors.SimpleButton simpleButton6;
         private DevExpress.XtraEditors.DropDownButton dropDownButton1;
     }

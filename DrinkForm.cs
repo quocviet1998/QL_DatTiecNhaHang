@@ -11,9 +11,9 @@ using DevExpress.XtraEditors;
 
 namespace QliDatTiec
 {
-    public partial class DrinkFrm : DevExpress.XtraEditors.XtraForm
+    public partial class DrinkForm : DevExpress.XtraEditors.XtraForm
     {
-        public DrinkFrm()
+        public DrinkForm()
         {
             InitializeComponent();
         }

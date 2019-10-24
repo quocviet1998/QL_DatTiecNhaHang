@@ -182,3 +182,11 @@ D:\Data\GITHUB\QL_DatTiecNhaHang\QL_DatTiecNhaHang\bin\Debug\es\DevExpress.XtraS
 D:\Data\GITHUB\QL_DatTiecNhaHang\QL_DatTiecNhaHang\bin\Debug\ja\DevExpress.XtraSpellChecker.v18.2.resources.dll
 D:\Data\GITHUB\QL_DatTiecNhaHang\QL_DatTiecNhaHang\bin\Debug\ru\DevExpress.XtraSpellChecker.v18.2.resources.dll
 D:\Data\GITHUB\QL_DatTiecNhaHang\QL_DatTiecNhaHang\obj\Debug\QL_DatTiecNhaHang.UCCalendar.resources
+D:\Data\GITHUB\QL_DatTiecNhaHang\QL_DatTiecNhaHang\bin\Debug\QL_DatTiecNhaHang.exe.config
+D:\Data\GITHUB\QL_DatTiecNhaHang\QL_DatTiecNhaHang\obj\Debug\QL_DatTiecNhaHang.BookingDetailForm.resources
+D:\Data\GITHUB\QL_DatTiecNhaHang\QL_DatTiecNhaHang\obj\Debug\QL_DatTiecNhaHang.DishComboForm.resources
+D:\Data\GITHUB\QL_DatTiecNhaHang\QL_DatTiecNhaHang\obj\Debug\QL_DatTiecNhaHang.DishForm.resources
+D:\Data\GITHUB\QL_DatTiecNhaHang\QL_DatTiecNhaHang\obj\Debug\QliDatTiec.DrinkForm.resources
+D:\Data\GITHUB\QL_DatTiecNhaHang\QL_DatTiecNhaHang\obj\Debug\QL_DatTiecNhaHang.EmployeeForm.resources
+D:\Data\GITHUB\QL_DatTiecNhaHang\QL_DatTiecNhaHang\obj\Debug\QL_DatTiecNhaHang.ExtraServiceForm.resources
+D:\Data\GITHUB\QL_DatTiecNhaHang\QL_DatTiecNhaHang\obj\Debug\QliDatTiec.OtherServiceForm.resources
