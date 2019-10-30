@@ -111,7 +111,7 @@ namespace QL_DatTiecNhaHang
     #endregion
 		
 		public DataSourceDataContext() : 
-				base(global::QL_DatTiecNhaHang.Properties.Settings.Default.QLDatTiecNhaHangConnectionString1, mappingSource)
+				base(global::QL_DatTiecNhaHang.Properties.Settings.Default.QLDatTiecNhaHangConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

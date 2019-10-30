@@ -40,11 +40,16 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.qlDatTiecNhaHangDataSet1 = new QL_DatTiecNhaHang.QLDatTiecNhaHangDataSet();
+            this.combO_MONANTableAdapter1 = new QL_DatTiecNhaHang.QLDatTiecNhaHangDataSetTableAdapters.COMBO_MONANTableAdapter();
+            this.colIdCBMA = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colGhiChu = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qlDatTiecNhaHangDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // simpleButton3
@@ -104,11 +109,16 @@
             // 
             // gridView1
             // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colIdCBMA,
+            this.colGhiChu});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
             // gridControl1
             // 
+            this.gridControl1.DataMember = "COMBO_MONAN";
+            this.gridControl1.DataSource = this.qlDatTiecNhaHangDataSet1;
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.gridControl1.Location = new System.Drawing.Point(0, 210);
             this.gridControl1.MainView = this.gridView1;
@@ -140,6 +150,33 @@
             this.textEdit1.Size = new System.Drawing.Size(214, 22);
             this.textEdit1.TabIndex = 53;
             // 
+            // qlDatTiecNhaHangDataSet1
+            // 
+            this.qlDatTiecNhaHangDataSet1.DataSetName = "QLDatTiecNhaHangDataSet";
+            this.qlDatTiecNhaHangDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // combO_MONANTableAdapter1
+            // 
+            this.combO_MONANTableAdapter1.ClearBeforeFill = true;
+            // 
+            // colIdCBMA
+            // 
+            this.colIdCBMA.FieldName = "IdCBMA";
+            this.colIdCBMA.MinWidth = 25;
+            this.colIdCBMA.Name = "colIdCBMA";
+            this.colIdCBMA.Visible = true;
+            this.colIdCBMA.VisibleIndex = 0;
+            this.colIdCBMA.Width = 94;
+            // 
+            // colGhiChu
+            // 
+            this.colGhiChu.FieldName = "GhiChu";
+            this.colGhiChu.MinWidth = 25;
+            this.colGhiChu.Name = "colGhiChu";
+            this.colGhiChu.Visible = true;
+            this.colGhiChu.VisibleIndex = 1;
+            this.colGhiChu.Width = 94;
+            // 
             // DishComboForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -163,6 +200,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qlDatTiecNhaHangDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,5 +220,9 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit textEdit2;
         private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraGrid.Columns.GridColumn colIdCBMA;
+        private DevExpress.XtraGrid.Columns.GridColumn colGhiChu;
+        private QLDatTiecNhaHangDataSet qlDatTiecNhaHangDataSet1;
+        private QLDatTiecNhaHangDataSetTableAdapters.COMBO_MONANTableAdapter combO_MONANTableAdapter1;
     }
 }

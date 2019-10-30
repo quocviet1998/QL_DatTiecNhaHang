@@ -40,11 +40,20 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.qlDatTiecNhaHangDataSet1 = new QL_DatTiecNhaHang.QLDatTiecNhaHangDataSet();
+            this.monanTableAdapter1 = new QL_DatTiecNhaHang.QLDatTiecNhaHangDataSetTableAdapters.MONANTableAdapter();
+            this.colIdMA = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTenMA = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDVT = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDonGia = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colGhiChu = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colIdLMA = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qlDatTiecNhaHangDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // simpleButton3
@@ -111,11 +120,20 @@
             // 
             // gridView1
             // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colIdMA,
+            this.colTenMA,
+            this.colDVT,
+            this.colDonGia,
+            this.colGhiChu,
+            this.colIdLMA});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
             // gridControl1
             // 
+            this.gridControl1.DataMember = "MONAN";
+            this.gridControl1.DataSource = this.qlDatTiecNhaHangDataSet1;
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.gridControl1.Location = new System.Drawing.Point(0, 233);
             this.gridControl1.MainView = this.gridView1;
@@ -142,6 +160,69 @@
             this.labelControl2.TabIndex = 40;
             this.labelControl2.Text = "Tên danh mục món ăn";
             // 
+            // qlDatTiecNhaHangDataSet1
+            // 
+            this.qlDatTiecNhaHangDataSet1.DataSetName = "QLDatTiecNhaHangDataSet";
+            this.qlDatTiecNhaHangDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // monanTableAdapter1
+            // 
+            this.monanTableAdapter1.ClearBeforeFill = true;
+            // 
+            // colIdMA
+            // 
+            this.colIdMA.FieldName = "IdMA";
+            this.colIdMA.MinWidth = 25;
+            this.colIdMA.Name = "colIdMA";
+            this.colIdMA.Visible = true;
+            this.colIdMA.VisibleIndex = 0;
+            this.colIdMA.Width = 94;
+            // 
+            // colTenMA
+            // 
+            this.colTenMA.FieldName = "TenMA";
+            this.colTenMA.MinWidth = 25;
+            this.colTenMA.Name = "colTenMA";
+            this.colTenMA.Visible = true;
+            this.colTenMA.VisibleIndex = 1;
+            this.colTenMA.Width = 94;
+            // 
+            // colDVT
+            // 
+            this.colDVT.FieldName = "DVT";
+            this.colDVT.MinWidth = 25;
+            this.colDVT.Name = "colDVT";
+            this.colDVT.Visible = true;
+            this.colDVT.VisibleIndex = 2;
+            this.colDVT.Width = 94;
+            // 
+            // colDonGia
+            // 
+            this.colDonGia.FieldName = "DonGia";
+            this.colDonGia.MinWidth = 25;
+            this.colDonGia.Name = "colDonGia";
+            this.colDonGia.Visible = true;
+            this.colDonGia.VisibleIndex = 3;
+            this.colDonGia.Width = 94;
+            // 
+            // colGhiChu
+            // 
+            this.colGhiChu.FieldName = "GhiChu";
+            this.colGhiChu.MinWidth = 25;
+            this.colGhiChu.Name = "colGhiChu";
+            this.colGhiChu.Visible = true;
+            this.colGhiChu.VisibleIndex = 4;
+            this.colGhiChu.Width = 94;
+            // 
+            // colIdLMA
+            // 
+            this.colIdLMA.FieldName = "IdLMA";
+            this.colIdLMA.MinWidth = 25;
+            this.colIdLMA.Name = "colIdLMA";
+            this.colIdLMA.Visible = true;
+            this.colIdLMA.VisibleIndex = 5;
+            this.colIdLMA.Width = 94;
+            // 
             // DishForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -165,6 +246,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qlDatTiecNhaHangDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,5 +266,13 @@
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraGrid.Columns.GridColumn colIdMA;
+        private DevExpress.XtraGrid.Columns.GridColumn colTenMA;
+        private DevExpress.XtraGrid.Columns.GridColumn colDVT;
+        private DevExpress.XtraGrid.Columns.GridColumn colDonGia;
+        private DevExpress.XtraGrid.Columns.GridColumn colGhiChu;
+        private DevExpress.XtraGrid.Columns.GridColumn colIdLMA;
+        private QLDatTiecNhaHangDataSet qlDatTiecNhaHangDataSet1;
+        private QLDatTiecNhaHangDataSetTableAdapters.MONANTableAdapter monanTableAdapter1;
     }
 }

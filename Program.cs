@@ -16,23 +16,15 @@ namespace QL_DatTiecNhaHang
         [STAThread]
         static void Main()
         {
-            //SkinManager.EnableFormSkins();
-            //UserLookAndFeel.Default.SetSkinStyle("DevExpress Light Style");
-            //Application.EnableVisualStyles();
-            //Application.SetCompatibleTextRenderingDefault(false);
-            //LoginForm loginForm = new LoginForm();
-            //loginForm.ShowDialog();
-            //if (loginForm.Status == 1)
-            //{
-            //    Application.Run(new MainForm());
-            //}
-
-
+            SkinManager.EnableFormSkins();
+            //UserLookAndFeel.Default.SetSkinStyle("Metropolis");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            BonusSkins.Register();
-            Application.Run(new ExtraServiceForm());
+            LoginForm loginForm = new LoginForm();
+            //Application.Run(loginForm);
+            Application.Run(new BookingDetailForm());
+
         }
     }
 }

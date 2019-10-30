@@ -48,6 +48,16 @@
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.qlDatTiecNhaHangDataSet1 = new QL_DatTiecNhaHang.QLDatTiecNhaHangDataSet();
+            this.nhanvienTableAdapter1 = new QL_DatTiecNhaHang.QLDatTiecNhaHangDataSetTableAdapters.NHANVIENTableAdapter();
+            this.colIdNV = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colHoTenNV = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNgaySinhNV = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colGioiTinhNV = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDiaChiNV = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDienThoaiNV = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colGhiChuNV = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colIdBP = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
@@ -57,21 +67,33 @@
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qlDatTiecNhaHangDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
             // 
+            this.gridControl1.DataMember = "NHANVIEN";
+            this.gridControl1.DataSource = this.qlDatTiecNhaHangDataSet1;
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gridControl1.Location = new System.Drawing.Point(0, 248);
+            this.gridControl1.Location = new System.Drawing.Point(0, 305);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1008, 479);
+            this.gridControl1.Size = new System.Drawing.Size(1170, 479);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // gridView1
             // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colIdNV,
+            this.colHoTenNV,
+            this.colNgaySinhNV,
+            this.colGioiTinhNV,
+            this.colDiaChiNV,
+            this.colDienThoaiNV,
+            this.colGhiChuNV,
+            this.colIdBP});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
@@ -218,11 +240,92 @@
             this.simpleButton4.TabIndex = 18;
             this.simpleButton4.Text = "Xóa";
             // 
+            // qlDatTiecNhaHangDataSet1
+            // 
+            this.qlDatTiecNhaHangDataSet1.DataSetName = "QLDatTiecNhaHangDataSet";
+            this.qlDatTiecNhaHangDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // nhanvienTableAdapter1
+            // 
+            this.nhanvienTableAdapter1.ClearBeforeFill = true;
+            // 
+            // colIdNV
+            // 
+            this.colIdNV.FieldName = "IdNV";
+            this.colIdNV.MinWidth = 25;
+            this.colIdNV.Name = "colIdNV";
+            this.colIdNV.Visible = true;
+            this.colIdNV.VisibleIndex = 0;
+            this.colIdNV.Width = 94;
+            // 
+            // colHoTenNV
+            // 
+            this.colHoTenNV.FieldName = "HoTenNV";
+            this.colHoTenNV.MinWidth = 25;
+            this.colHoTenNV.Name = "colHoTenNV";
+            this.colHoTenNV.Visible = true;
+            this.colHoTenNV.VisibleIndex = 1;
+            this.colHoTenNV.Width = 94;
+            // 
+            // colNgaySinhNV
+            // 
+            this.colNgaySinhNV.FieldName = "NgaySinhNV";
+            this.colNgaySinhNV.MinWidth = 25;
+            this.colNgaySinhNV.Name = "colNgaySinhNV";
+            this.colNgaySinhNV.Visible = true;
+            this.colNgaySinhNV.VisibleIndex = 2;
+            this.colNgaySinhNV.Width = 94;
+            // 
+            // colGioiTinhNV
+            // 
+            this.colGioiTinhNV.FieldName = "GioiTinhNV";
+            this.colGioiTinhNV.MinWidth = 25;
+            this.colGioiTinhNV.Name = "colGioiTinhNV";
+            this.colGioiTinhNV.Visible = true;
+            this.colGioiTinhNV.VisibleIndex = 3;
+            this.colGioiTinhNV.Width = 94;
+            // 
+            // colDiaChiNV
+            // 
+            this.colDiaChiNV.FieldName = "DiaChiNV";
+            this.colDiaChiNV.MinWidth = 25;
+            this.colDiaChiNV.Name = "colDiaChiNV";
+            this.colDiaChiNV.Visible = true;
+            this.colDiaChiNV.VisibleIndex = 4;
+            this.colDiaChiNV.Width = 94;
+            // 
+            // colDienThoaiNV
+            // 
+            this.colDienThoaiNV.FieldName = "DienThoaiNV";
+            this.colDienThoaiNV.MinWidth = 25;
+            this.colDienThoaiNV.Name = "colDienThoaiNV";
+            this.colDienThoaiNV.Visible = true;
+            this.colDienThoaiNV.VisibleIndex = 5;
+            this.colDienThoaiNV.Width = 94;
+            // 
+            // colGhiChuNV
+            // 
+            this.colGhiChuNV.FieldName = "GhiChuNV";
+            this.colGhiChuNV.MinWidth = 25;
+            this.colGhiChuNV.Name = "colGhiChuNV";
+            this.colGhiChuNV.Visible = true;
+            this.colGhiChuNV.VisibleIndex = 6;
+            this.colGhiChuNV.Width = 94;
+            // 
+            // colIdBP
+            // 
+            this.colIdBP.FieldName = "IdBP";
+            this.colIdBP.MinWidth = 25;
+            this.colIdBP.Name = "colIdBP";
+            this.colIdBP.Visible = true;
+            this.colIdBP.VisibleIndex = 7;
+            this.colIdBP.Width = 94;
+            // 
             // EmployeeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 727);
+            this.ClientSize = new System.Drawing.Size(1170, 784);
             this.Controls.Add(this.simpleButton3);
             this.Controls.Add(this.simpleButton4);
             this.Controls.Add(this.simpleButton2);
@@ -253,6 +356,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qlDatTiecNhaHangDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -280,5 +384,15 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
+        private QLDatTiecNhaHangDataSet qlDatTiecNhaHangDataSet1;
+        private DevExpress.XtraGrid.Columns.GridColumn colIdNV;
+        private DevExpress.XtraGrid.Columns.GridColumn colHoTenNV;
+        private DevExpress.XtraGrid.Columns.GridColumn colNgaySinhNV;
+        private DevExpress.XtraGrid.Columns.GridColumn colGioiTinhNV;
+        private DevExpress.XtraGrid.Columns.GridColumn colDiaChiNV;
+        private DevExpress.XtraGrid.Columns.GridColumn colDienThoaiNV;
+        private DevExpress.XtraGrid.Columns.GridColumn colGhiChuNV;
+        private DevExpress.XtraGrid.Columns.GridColumn colIdBP;
+        private QLDatTiecNhaHangDataSetTableAdapters.NHANVIENTableAdapter nhanvienTableAdapter1;
     }
 }

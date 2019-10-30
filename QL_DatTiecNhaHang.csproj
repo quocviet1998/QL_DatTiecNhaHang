@@ -48,7 +48,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=9.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.9.0.0\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.BonusSkins.v18.2" />
+    <Reference Include="DevExpress.CodeParser.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Dashboard.v18.2.Core, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v18.2" />
     <Reference Include="DevExpress.DataAccess.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -84,6 +88,10 @@
     <Compile Include="BookingDetailForm.Designer.cs">
       <DependentUpon>BookingDetailForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomClasses\BaseClass.cs" />
+    <Compile Include="CustomClasses\Connection.cs" />
+    <Compile Include="CustomClasses\DTOs\NHANVIEN_DTO.cs" />
+    <Compile Include="CustomClasses\ExecProc.cs" />
     <Compile Include="CustomClasses\LoginResult.cs" />
     <Compile Include="CustomClasses\QLNguoiDung.cs" />
     <Compile Include="CustomerForm.cs">
@@ -104,7 +112,19 @@
     <Compile Include="dbQLNHCode\BOPHAN_InsResult.cs">
       <DependentUpon>StoredProcHelper.cs</DependentUpon>
     </Compile>
+    <Compile Include="dbQLNHCode\BOPHAN_InsResult1.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\BOPHAN_InsResult2.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
     <Compile Include="dbQLNHCode\BOPHAN_UpdResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\BOPHAN_UpdResult1.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\BOPHAN_UpdResult2.cs">
       <DependentUpon>StoredProcHelper.cs</DependentUpon>
     </Compile>
     <Compile Include="dbQLNHCode\COMBO_MONAN.cs" />
@@ -158,13 +178,37 @@
     <Compile Include="dbQLNHCode\DICHVU_UpdResult.cs">
       <DependentUpon>StoredProcHelper.cs</DependentUpon>
     </Compile>
+    <Compile Include="dbQLNHCode\DICHVU_UpdResult1.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\DICHVU_UpdResult2.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
     <Compile Include="dbQLNHCode\DODUNG.cs" />
     <Compile Include="dbQLNHCode\DODUNG.Designer.cs">
       <DependentUpon>DODUNG.cs</DependentUpon>
     </Compile>
+    <Compile Include="dbQLNHCode\DODUNG_InsResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\DODUNG_InsResult1.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\DODUNG_UpdResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\DODUNG_UpdResult1.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
     <Compile Include="dbQLNHCode\DOUONG.cs" />
     <Compile Include="dbQLNHCode\DOUONG.Designer.cs">
       <DependentUpon>DOUONG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\DOUONG_InsResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\DOUONG_InsResult1.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
     </Compile>
     <Compile Include="dbQLNHCode\HOADON.cs" />
     <Compile Include="dbQLNHCode\HOADON.Designer.cs">
@@ -174,25 +218,82 @@
     <Compile Include="dbQLNHCode\KHACHHANG.Designer.cs">
       <DependentUpon>KHACHHANG.cs</DependentUpon>
     </Compile>
+    <Compile Include="dbQLNHCode\KHACHHANG_GetAllResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
     <Compile Include="dbQLNHCode\LOAIDOUONG.cs" />
     <Compile Include="dbQLNHCode\LOAIDOUONG.Designer.cs">
       <DependentUpon>LOAIDOUONG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\LOAIDOUONG_InsResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\LOAIDOUONG_InsResult1.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\LOAIDOUONG_UpdResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\LOAIDOUONG_UpdResult1.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
     </Compile>
     <Compile Include="dbQLNHCode\LOAIMONAN.cs" />
     <Compile Include="dbQLNHCode\LOAIMONAN.Designer.cs">
       <DependentUpon>LOAIMONAN.cs</DependentUpon>
     </Compile>
+    <Compile Include="dbQLNHCode\LOAIMONAN_InsResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\LOAIMONAN_InsResult1.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\LOAIMONAN_UpdResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\LOAIMONAN_UpdResult1.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
     <Compile Include="dbQLNHCode\LOAITIEC.cs" />
     <Compile Include="dbQLNHCode\LOAITIEC.Designer.cs">
       <DependentUpon>LOAITIEC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\LOAITIEC_InsResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\LOAITIEC_InsResult1.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\LOAITIEC_UpdResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\LOAITIEC_UpdResult1.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
     </Compile>
     <Compile Include="dbQLNHCode\MANHINH.cs" />
     <Compile Include="dbQLNHCode\MANHINH.Designer.cs">
       <DependentUpon>MANHINH.cs</DependentUpon>
     </Compile>
+    <Compile Include="dbQLNHCode\MANHINH_InsResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\MANHINH_InsResult1.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\MANHINH_UpdResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\MANHINH_UpdResult1.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
     <Compile Include="dbQLNHCode\MONAN.cs" />
     <Compile Include="dbQLNHCode\MONAN.Designer.cs">
       <DependentUpon>MONAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\MONAN_DelResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\MONAN_DelResult1.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
     </Compile>
     <Compile Include="dbQLNHCode\NGUOIDUNG.cs" />
     <Compile Include="dbQLNHCode\NGUOIDUNG.Designer.cs">
@@ -201,6 +302,9 @@
     <Compile Include="dbQLNHCode\NHANVIEN.cs" />
     <Compile Include="dbQLNHCode\NHANVIEN.Designer.cs">
       <DependentUpon>NHANVIEN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbQLNHCode\NHANVIEN_ByIdResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
     </Compile>
     <Compile Include="dbQLNHCode\NHOMNGUOIDUNG.cs" />
     <Compile Include="dbQLNHCode\NHOMNGUOIDUNG.Designer.cs">
@@ -268,8 +372,17 @@
     <Compile Include="OtherServiceForm.Designer.cs">
       <DependentUpon>OtherServiceForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PhanQuyenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhanQuyenForm.Designer.cs">
+      <DependentUpon>PhanQuyenForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLDatTiecNhaHangDataSet.cs">
+      <DependentUpon>QLDatTiecNhaHangDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="QLDatTiecNhaHangDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -280,6 +393,18 @@
     </Compile>
     <Compile Include="UCCalendar.Designer.cs">
       <DependentUpon>UCCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDanhMuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDanhMuc.Designer.cs">
+      <DependentUpon>UCDanhMuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_DM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_DM.Designer.cs">
+      <DependentUpon>UC_DM.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="BookingDetailForm.resx">
       <DependentUpon>BookingDetailForm.cs</DependentUpon>
@@ -311,6 +436,9 @@
     <EmbeddedResource Include="OtherServiceForm.resx">
       <DependentUpon>OtherServiceForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PhanQuyenForm.resx">
+      <DependentUpon>PhanQuyenForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -324,7 +452,13 @@
     <EmbeddedResource Include="UCCalendar.resx">
       <DependentUpon>UCCalendar.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="app.config" />
+    <EmbeddedResource Include="UCDanhMuc.resx">
+      <DependentUpon>UCDanhMuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_DM.resx">
+      <DependentUpon>UC_DM.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
     <None Include="DataSource.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>DataSource.designer.cs</LastGenOutput>
@@ -337,6 +471,7 @@
     <None Include="dbQLNH.xpo.diagram">
       <DependentUpon>dbQLNH.xpo</DependentUpon>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\DataSources\BookingDetailForm.datasource" />
     <None Include="Properties\DataSources\CustomerForm.datasource" />
     <None Include="Properties\DataSources\DishComboForm.datasource" />

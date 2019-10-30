@@ -25,38 +25,38 @@ namespace QL_DatTiecNhaHang.QLDatTiecNhaHang
         {
             return session.ExecuteSproc("BOPHAN_Ins", new OperandValue(TenBP), new OperandValue(GhiChu));
         }
-        public static System.Collections.Generic.ICollection<BOPHAN_InsResult> ExecBOPHAN_InsIntoObjects(Session session, string TenBP, string GhiChu)
+        public static System.Collections.Generic.ICollection<BOPHAN_InsResult2> ExecBOPHAN_InsIntoObjects(Session session, string TenBP, string GhiChu)
         {
-            return session.GetObjectsFromSproc<BOPHAN_InsResult>("BOPHAN_Ins", new OperandValue(TenBP), new OperandValue(GhiChu));
+            return session.GetObjectsFromSproc<BOPHAN_InsResult2>("BOPHAN_Ins", new OperandValue(TenBP), new OperandValue(GhiChu));
         }
         public static XPDataView ExecBOPHAN_InsIntoDataView(Session session, string TenBP, string GhiChu)
         {
             DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("BOPHAN_Ins", new OperandValue(TenBP), new OperandValue(GhiChu));
-            return new XPDataView(session.Dictionary, session.GetClassInfo(typeof(BOPHAN_InsResult)), sprocData);
+            return new XPDataView(session.Dictionary, session.GetClassInfo(typeof(BOPHAN_InsResult2)), sprocData);
         }
         public static void ExecBOPHAN_InsIntoDataView(XPDataView dataView, Session session, string TenBP, string GhiChu)
         {
             DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("BOPHAN_Ins", new OperandValue(TenBP), new OperandValue(GhiChu));
-            dataView.PopulateProperties(session.GetClassInfo(typeof(BOPHAN_InsResult)));
+            dataView.PopulateProperties(session.GetClassInfo(typeof(BOPHAN_InsResult2)));
             dataView.LoadData(sprocData);
         }
         public static DevExpress.Xpo.DB.SelectedData ExecBOPHAN_Upd(Session session, int IdBP, string TenBP, string GhiChu)
         {
             return session.ExecuteSproc("BOPHAN_Upd", new OperandValue(IdBP), new OperandValue(TenBP), new OperandValue(GhiChu));
         }
-        public static System.Collections.Generic.ICollection<BOPHAN_UpdResult> ExecBOPHAN_UpdIntoObjects(Session session, int IdBP, string TenBP, string GhiChu)
+        public static System.Collections.Generic.ICollection<BOPHAN_UpdResult2> ExecBOPHAN_UpdIntoObjects(Session session, int IdBP, string TenBP, string GhiChu)
         {
-            return session.GetObjectsFromSproc<BOPHAN_UpdResult>("BOPHAN_Upd", new OperandValue(IdBP), new OperandValue(TenBP), new OperandValue(GhiChu));
+            return session.GetObjectsFromSproc<BOPHAN_UpdResult2>("BOPHAN_Upd", new OperandValue(IdBP), new OperandValue(TenBP), new OperandValue(GhiChu));
         }
         public static XPDataView ExecBOPHAN_UpdIntoDataView(Session session, int IdBP, string TenBP, string GhiChu)
         {
             DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("BOPHAN_Upd", new OperandValue(IdBP), new OperandValue(TenBP), new OperandValue(GhiChu));
-            return new XPDataView(session.Dictionary, session.GetClassInfo(typeof(BOPHAN_UpdResult)), sprocData);
+            return new XPDataView(session.Dictionary, session.GetClassInfo(typeof(BOPHAN_UpdResult2)), sprocData);
         }
         public static void ExecBOPHAN_UpdIntoDataView(XPDataView dataView, Session session, int IdBP, string TenBP, string GhiChu)
         {
             DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("BOPHAN_Upd", new OperandValue(IdBP), new OperandValue(TenBP), new OperandValue(GhiChu));
-            dataView.PopulateProperties(session.GetClassInfo(typeof(BOPHAN_UpdResult)));
+            dataView.PopulateProperties(session.GetClassInfo(typeof(BOPHAN_UpdResult2)));
             dataView.LoadData(sprocData);
         }
         public static DevExpress.Xpo.DB.SelectedData ExecDANGNHAP(Session session, string TenDangNhap, string MatKhau)
@@ -86,19 +86,337 @@ namespace QL_DatTiecNhaHang.QLDatTiecNhaHang
         {
             return session.ExecuteSproc("DICHVU_Upd", new OperandValue(IdDV), new OperandValue(TenDV), new OperandValue(DonGiaDV), new OperandValue(GhiChu));
         }
-        public static System.Collections.Generic.ICollection<DICHVU_UpdResult> ExecDICHVU_UpdIntoObjects(Session session, int IdDV, string TenDV, decimal DonGiaDV, string GhiChu)
+        public static System.Collections.Generic.ICollection<DICHVU_UpdResult2> ExecDICHVU_UpdIntoObjects(Session session, int IdDV, string TenDV, decimal DonGiaDV, string GhiChu)
         {
-            return session.GetObjectsFromSproc<DICHVU_UpdResult>("DICHVU_Upd", new OperandValue(IdDV), new OperandValue(TenDV), new OperandValue(DonGiaDV), new OperandValue(GhiChu));
+            return session.GetObjectsFromSproc<DICHVU_UpdResult2>("DICHVU_Upd", new OperandValue(IdDV), new OperandValue(TenDV), new OperandValue(DonGiaDV), new OperandValue(GhiChu));
         }
         public static XPDataView ExecDICHVU_UpdIntoDataView(Session session, int IdDV, string TenDV, decimal DonGiaDV, string GhiChu)
         {
             DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("DICHVU_Upd", new OperandValue(IdDV), new OperandValue(TenDV), new OperandValue(DonGiaDV), new OperandValue(GhiChu));
-            return new XPDataView(session.Dictionary, session.GetClassInfo(typeof(DICHVU_UpdResult)), sprocData);
+            return new XPDataView(session.Dictionary, session.GetClassInfo(typeof(DICHVU_UpdResult2)), sprocData);
         }
         public static void ExecDICHVU_UpdIntoDataView(XPDataView dataView, Session session, int IdDV, string TenDV, decimal DonGiaDV, string GhiChu)
         {
             DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("DICHVU_Upd", new OperandValue(IdDV), new OperandValue(TenDV), new OperandValue(DonGiaDV), new OperandValue(GhiChu));
-            dataView.PopulateProperties(session.GetClassInfo(typeof(DICHVU_UpdResult)));
+            dataView.PopulateProperties(session.GetClassInfo(typeof(DICHVU_UpdResult2)));
+            dataView.LoadData(sprocData);
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecCOMBO_MONAN_Ins(Session session, string GhiChu)
+        {
+            return session.ExecuteSproc("COMBO_MONAN_Ins", new OperandValue(GhiChu));
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecCOMBO_MONAN_Del(Session session, int IdCBMA)
+        {
+            return session.ExecuteSproc("COMBO_MONAN_Del", new OperandValue(IdCBMA));
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecDODUNG_Ins(Session session, string TenDD, decimal ChiPhiDD)
+        {
+            return session.ExecuteSproc("DODUNG_Ins", new OperandValue(TenDD), new OperandValue(ChiPhiDD));
+        }
+        public static System.Collections.Generic.ICollection<DODUNG_InsResult1> ExecDODUNG_InsIntoObjects(Session session, string TenDD, decimal ChiPhiDD)
+        {
+            return session.GetObjectsFromSproc<DODUNG_InsResult1>("DODUNG_Ins", new OperandValue(TenDD), new OperandValue(ChiPhiDD));
+        }
+        public static XPDataView ExecDODUNG_InsIntoDataView(Session session, string TenDD, decimal ChiPhiDD)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("DODUNG_Ins", new OperandValue(TenDD), new OperandValue(ChiPhiDD));
+            return new XPDataView(session.Dictionary, session.GetClassInfo(typeof(DODUNG_InsResult1)), sprocData);
+        }
+        public static void ExecDODUNG_InsIntoDataView(XPDataView dataView, Session session, string TenDD, decimal ChiPhiDD)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("DODUNG_Ins", new OperandValue(TenDD), new OperandValue(ChiPhiDD));
+            dataView.PopulateProperties(session.GetClassInfo(typeof(DODUNG_InsResult1)));
+            dataView.LoadData(sprocData);
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecDODUNG_Upd(Session session, int IdDD, string TenDD, decimal ChiPhiDD)
+        {
+            return session.ExecuteSproc("DODUNG_Upd", new OperandValue(IdDD), new OperandValue(TenDD), new OperandValue(ChiPhiDD));
+        }
+        public static System.Collections.Generic.ICollection<DODUNG_UpdResult1> ExecDODUNG_UpdIntoObjects(Session session, int IdDD, string TenDD, decimal ChiPhiDD)
+        {
+            return session.GetObjectsFromSproc<DODUNG_UpdResult1>("DODUNG_Upd", new OperandValue(IdDD), new OperandValue(TenDD), new OperandValue(ChiPhiDD));
+        }
+        public static XPDataView ExecDODUNG_UpdIntoDataView(Session session, int IdDD, string TenDD, decimal ChiPhiDD)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("DODUNG_Upd", new OperandValue(IdDD), new OperandValue(TenDD), new OperandValue(ChiPhiDD));
+            return new XPDataView(session.Dictionary, session.GetClassInfo(typeof(DODUNG_UpdResult1)), sprocData);
+        }
+        public static void ExecDODUNG_UpdIntoDataView(XPDataView dataView, Session session, int IdDD, string TenDD, decimal ChiPhiDD)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("DODUNG_Upd", new OperandValue(IdDD), new OperandValue(TenDD), new OperandValue(ChiPhiDD));
+            dataView.PopulateProperties(session.GetClassInfo(typeof(DODUNG_UpdResult1)));
+            dataView.LoadData(sprocData);
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecDODUNG_Del(Session session, int IdDD)
+        {
+            return session.ExecuteSproc("DODUNG_Del", new OperandValue(IdDD));
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecDOUONG_Ins(Session session, string TenDU, string DVT, decimal DonGia, decimal DonGia_PS, string GhiChu)
+        {
+            return session.ExecuteSproc("DOUONG_Ins", new OperandValue(TenDU), new OperandValue(DVT), new OperandValue(DonGia), new OperandValue(DonGia_PS), new OperandValue(GhiChu));
+        }
+        public static System.Collections.Generic.ICollection<DOUONG_InsResult1> ExecDOUONG_InsIntoObjects(Session session, string TenDU, string DVT, decimal DonGia, decimal DonGia_PS, string GhiChu)
+        {
+            return session.GetObjectsFromSproc<DOUONG_InsResult1>("DOUONG_Ins", new OperandValue(TenDU), new OperandValue(DVT), new OperandValue(DonGia), new OperandValue(DonGia_PS), new OperandValue(GhiChu));
+        }
+        public static XPDataView ExecDOUONG_InsIntoDataView(Session session, string TenDU, string DVT, decimal DonGia, decimal DonGia_PS, string GhiChu)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("DOUONG_Ins", new OperandValue(TenDU), new OperandValue(DVT), new OperandValue(DonGia), new OperandValue(DonGia_PS), new OperandValue(GhiChu));
+            return new XPDataView(session.Dictionary, session.GetClassInfo(typeof(DOUONG_InsResult1)), sprocData);
+        }
+        public static void ExecDOUONG_InsIntoDataView(XPDataView dataView, Session session, string TenDU, string DVT, decimal DonGia, decimal DonGia_PS, string GhiChu)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("DOUONG_Ins", new OperandValue(TenDU), new OperandValue(DVT), new OperandValue(DonGia), new OperandValue(DonGia_PS), new OperandValue(GhiChu));
+            dataView.PopulateProperties(session.GetClassInfo(typeof(DOUONG_InsResult1)));
+            dataView.LoadData(sprocData);
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecDOUONG_Del(Session session, int IdDU)
+        {
+            return session.ExecuteSproc("DOUONG_Del", new OperandValue(IdDU));
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecLOAIDOUONG_Ins(Session session, string TenLDU, string GhiChu)
+        {
+            return session.ExecuteSproc("LOAIDOUONG_Ins", new OperandValue(TenLDU), new OperandValue(GhiChu));
+        }
+        public static System.Collections.Generic.ICollection<LOAIDOUONG_InsResult1> ExecLOAIDOUONG_InsIntoObjects(Session session, string TenLDU, string GhiChu)
+        {
+            return session.GetObjectsFromSproc<LOAIDOUONG_InsResult1>("LOAIDOUONG_Ins", new OperandValue(TenLDU), new OperandValue(GhiChu));
+        }
+        public static XPDataView ExecLOAIDOUONG_InsIntoDataView(Session session, string TenLDU, string GhiChu)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("LOAIDOUONG_Ins", new OperandValue(TenLDU), new OperandValue(GhiChu));
+            return new XPDataView(session.Dictionary, session.GetClassInfo(typeof(LOAIDOUONG_InsResult1)), sprocData);
+        }
+        public static void ExecLOAIDOUONG_InsIntoDataView(XPDataView dataView, Session session, string TenLDU, string GhiChu)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("LOAIDOUONG_Ins", new OperandValue(TenLDU), new OperandValue(GhiChu));
+            dataView.PopulateProperties(session.GetClassInfo(typeof(LOAIDOUONG_InsResult1)));
+            dataView.LoadData(sprocData);
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecLOAIDOUONG_Upd(Session session, int IdLDU, string TenLDU, string GhiChu)
+        {
+            return session.ExecuteSproc("LOAIDOUONG_Upd", new OperandValue(IdLDU), new OperandValue(TenLDU), new OperandValue(GhiChu));
+        }
+        public static System.Collections.Generic.ICollection<LOAIDOUONG_UpdResult1> ExecLOAIDOUONG_UpdIntoObjects(Session session, int IdLDU, string TenLDU, string GhiChu)
+        {
+            return session.GetObjectsFromSproc<LOAIDOUONG_UpdResult1>("LOAIDOUONG_Upd", new OperandValue(IdLDU), new OperandValue(TenLDU), new OperandValue(GhiChu));
+        }
+        public static XPDataView ExecLOAIDOUONG_UpdIntoDataView(Session session, int IdLDU, string TenLDU, string GhiChu)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("LOAIDOUONG_Upd", new OperandValue(IdLDU), new OperandValue(TenLDU), new OperandValue(GhiChu));
+            return new XPDataView(session.Dictionary, session.GetClassInfo(typeof(LOAIDOUONG_UpdResult1)), sprocData);
+        }
+        public static void ExecLOAIDOUONG_UpdIntoDataView(XPDataView dataView, Session session, int IdLDU, string TenLDU, string GhiChu)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("LOAIDOUONG_Upd", new OperandValue(IdLDU), new OperandValue(TenLDU), new OperandValue(GhiChu));
+            dataView.PopulateProperties(session.GetClassInfo(typeof(LOAIDOUONG_UpdResult1)));
+            dataView.LoadData(sprocData);
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecLOAIDOUONG_Del(Session session, int IdLDU)
+        {
+            return session.ExecuteSproc("LOAIDOUONG_Del", new OperandValue(IdLDU));
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecLOAIMONAN_Del(Session session, int IdLMA)
+        {
+            return session.ExecuteSproc("LOAIMONAN_Del", new OperandValue(IdLMA));
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecLOAIMONAN_Upd(Session session, int IdLMA, string TenLMA, string GhiChu)
+        {
+            return session.ExecuteSproc("LOAIMONAN_Upd", new OperandValue(IdLMA), new OperandValue(TenLMA), new OperandValue(GhiChu));
+        }
+        public static System.Collections.Generic.ICollection<LOAIMONAN_UpdResult1> ExecLOAIMONAN_UpdIntoObjects(Session session, int IdLMA, string TenLMA, string GhiChu)
+        {
+            return session.GetObjectsFromSproc<LOAIMONAN_UpdResult1>("LOAIMONAN_Upd", new OperandValue(IdLMA), new OperandValue(TenLMA), new OperandValue(GhiChu));
+        }
+        public static XPDataView ExecLOAIMONAN_UpdIntoDataView(Session session, int IdLMA, string TenLMA, string GhiChu)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("LOAIMONAN_Upd", new OperandValue(IdLMA), new OperandValue(TenLMA), new OperandValue(GhiChu));
+            return new XPDataView(session.Dictionary, session.GetClassInfo(typeof(LOAIMONAN_UpdResult1)), sprocData);
+        }
+        public static void ExecLOAIMONAN_UpdIntoDataView(XPDataView dataView, Session session, int IdLMA, string TenLMA, string GhiChu)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("LOAIMONAN_Upd", new OperandValue(IdLMA), new OperandValue(TenLMA), new OperandValue(GhiChu));
+            dataView.PopulateProperties(session.GetClassInfo(typeof(LOAIMONAN_UpdResult1)));
+            dataView.LoadData(sprocData);
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecLOAIMONAN_Ins(Session session, string TenLMA, string GhiChu)
+        {
+            return session.ExecuteSproc("LOAIMONAN_Ins", new OperandValue(TenLMA), new OperandValue(GhiChu));
+        }
+        public static System.Collections.Generic.ICollection<LOAIMONAN_InsResult1> ExecLOAIMONAN_InsIntoObjects(Session session, string TenLMA, string GhiChu)
+        {
+            return session.GetObjectsFromSproc<LOAIMONAN_InsResult1>("LOAIMONAN_Ins", new OperandValue(TenLMA), new OperandValue(GhiChu));
+        }
+        public static XPDataView ExecLOAIMONAN_InsIntoDataView(Session session, string TenLMA, string GhiChu)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("LOAIMONAN_Ins", new OperandValue(TenLMA), new OperandValue(GhiChu));
+            return new XPDataView(session.Dictionary, session.GetClassInfo(typeof(LOAIMONAN_InsResult1)), sprocData);
+        }
+        public static void ExecLOAIMONAN_InsIntoDataView(XPDataView dataView, Session session, string TenLMA, string GhiChu)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("LOAIMONAN_Ins", new OperandValue(TenLMA), new OperandValue(GhiChu));
+            dataView.PopulateProperties(session.GetClassInfo(typeof(LOAIMONAN_InsResult1)));
+            dataView.LoadData(sprocData);
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecLOAITIEC_Ins(Session session, string TenLT)
+        {
+            return session.ExecuteSproc("LOAITIEC_Ins", new OperandValue(TenLT));
+        }
+        public static System.Collections.Generic.ICollection<LOAITIEC_InsResult1> ExecLOAITIEC_InsIntoObjects(Session session, string TenLT)
+        {
+            return session.GetObjectsFromSproc<LOAITIEC_InsResult1>("LOAITIEC_Ins", new OperandValue(TenLT));
+        }
+        public static XPDataView ExecLOAITIEC_InsIntoDataView(Session session, string TenLT)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("LOAITIEC_Ins", new OperandValue(TenLT));
+            return new XPDataView(session.Dictionary, session.GetClassInfo(typeof(LOAITIEC_InsResult1)), sprocData);
+        }
+        public static void ExecLOAITIEC_InsIntoDataView(XPDataView dataView, Session session, string TenLT)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("LOAITIEC_Ins", new OperandValue(TenLT));
+            dataView.PopulateProperties(session.GetClassInfo(typeof(LOAITIEC_InsResult1)));
+            dataView.LoadData(sprocData);
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecLOAITIEC_Upd(Session session, int IdLT, string TenLT)
+        {
+            return session.ExecuteSproc("LOAITIEC_Upd", new OperandValue(IdLT), new OperandValue(TenLT));
+        }
+        public static System.Collections.Generic.ICollection<LOAITIEC_UpdResult1> ExecLOAITIEC_UpdIntoObjects(Session session, int IdLT, string TenLT)
+        {
+            return session.GetObjectsFromSproc<LOAITIEC_UpdResult1>("LOAITIEC_Upd", new OperandValue(IdLT), new OperandValue(TenLT));
+        }
+        public static XPDataView ExecLOAITIEC_UpdIntoDataView(Session session, int IdLT, string TenLT)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("LOAITIEC_Upd", new OperandValue(IdLT), new OperandValue(TenLT));
+            return new XPDataView(session.Dictionary, session.GetClassInfo(typeof(LOAITIEC_UpdResult1)), sprocData);
+        }
+        public static void ExecLOAITIEC_UpdIntoDataView(XPDataView dataView, Session session, int IdLT, string TenLT)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("LOAITIEC_Upd", new OperandValue(IdLT), new OperandValue(TenLT));
+            dataView.PopulateProperties(session.GetClassInfo(typeof(LOAITIEC_UpdResult1)));
+            dataView.LoadData(sprocData);
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecLOAITIEC_Del(Session session, int IdLT)
+        {
+            return session.ExecuteSproc("LOAITIEC_Del", new OperandValue(IdLT));
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecMANHINH_Ins(Session session, int IdMH, string TenMH)
+        {
+            return session.ExecuteSproc("MANHINH_Ins", new OperandValue(IdMH), new OperandValue(TenMH));
+        }
+        public static System.Collections.Generic.ICollection<MANHINH_InsResult1> ExecMANHINH_InsIntoObjects(Session session, int IdMH, string TenMH)
+        {
+            return session.GetObjectsFromSproc<MANHINH_InsResult1>("MANHINH_Ins", new OperandValue(IdMH), new OperandValue(TenMH));
+        }
+        public static XPDataView ExecMANHINH_InsIntoDataView(Session session, int IdMH, string TenMH)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("MANHINH_Ins", new OperandValue(IdMH), new OperandValue(TenMH));
+            return new XPDataView(session.Dictionary, session.GetClassInfo(typeof(MANHINH_InsResult1)), sprocData);
+        }
+        public static void ExecMANHINH_InsIntoDataView(XPDataView dataView, Session session, int IdMH, string TenMH)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("MANHINH_Ins", new OperandValue(IdMH), new OperandValue(TenMH));
+            dataView.PopulateProperties(session.GetClassInfo(typeof(MANHINH_InsResult1)));
+            dataView.LoadData(sprocData);
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecMANHINH_Upd(Session session, int IdMH, string TenMH)
+        {
+            return session.ExecuteSproc("MANHINH_Upd", new OperandValue(IdMH), new OperandValue(TenMH));
+        }
+        public static System.Collections.Generic.ICollection<MANHINH_UpdResult1> ExecMANHINH_UpdIntoObjects(Session session, int IdMH, string TenMH)
+        {
+            return session.GetObjectsFromSproc<MANHINH_UpdResult1>("MANHINH_Upd", new OperandValue(IdMH), new OperandValue(TenMH));
+        }
+        public static XPDataView ExecMANHINH_UpdIntoDataView(Session session, int IdMH, string TenMH)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("MANHINH_Upd", new OperandValue(IdMH), new OperandValue(TenMH));
+            return new XPDataView(session.Dictionary, session.GetClassInfo(typeof(MANHINH_UpdResult1)), sprocData);
+        }
+        public static void ExecMANHINH_UpdIntoDataView(XPDataView dataView, Session session, int IdMH, string TenMH)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("MANHINH_Upd", new OperandValue(IdMH), new OperandValue(TenMH));
+            dataView.PopulateProperties(session.GetClassInfo(typeof(MANHINH_UpdResult1)));
+            dataView.LoadData(sprocData);
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecMANHINH_Del(Session session, int IdMH)
+        {
+            return session.ExecuteSproc("MANHINH_Del", new OperandValue(IdMH));
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecMONAN_Del(Session session, int IdMA)
+        {
+            return session.ExecuteSproc("MONAN_Del", new OperandValue(IdMA));
+        }
+        public static System.Collections.Generic.ICollection<MONAN_DelResult1> ExecMONAN_DelIntoObjects(Session session, int IdMA)
+        {
+            return session.GetObjectsFromSproc<MONAN_DelResult1>("MONAN_Del", new OperandValue(IdMA));
+        }
+        public static XPDataView ExecMONAN_DelIntoDataView(Session session, int IdMA)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("MONAN_Del", new OperandValue(IdMA));
+            return new XPDataView(session.Dictionary, session.GetClassInfo(typeof(MONAN_DelResult1)), sprocData);
+        }
+        public static void ExecMONAN_DelIntoDataView(XPDataView dataView, Session session, int IdMA)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("MONAN_Del", new OperandValue(IdMA));
+            dataView.PopulateProperties(session.GetClassInfo(typeof(MONAN_DelResult1)));
+            dataView.LoadData(sprocData);
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecNGUOIDUNG_Del(Session session, string TenDangNhap)
+        {
+            return session.ExecuteSproc("NGUOIDUNG_Del", new OperandValue(TenDangNhap));
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecNHANVIEN_Del(Session session, int IdNV)
+        {
+            return session.ExecuteSproc("NHANVIEN_Del", new OperandValue(IdNV));
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecNHOMNGUOIDUNG_Del(Session session, int IdNND)
+        {
+            return session.ExecuteSproc("NHOMNGUOIDUNG_Del", new OperandValue(IdNND));
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecPHANQUYEN_HT(Session session, int IdNND, int IdMH, bool CoQuyen)
+        {
+            return session.ExecuteSproc("PHANQUYEN_HT", new OperandValue(IdNND), new OperandValue(IdMH), new OperandValue(CoQuyen));
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecSANHTIEC_Del(Session session, int IdST)
+        {
+            return session.ExecuteSproc("SANHTIEC_Del", new OperandValue(IdST));
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecNHANVIEN_ById(Session session, int IdNV)
+        {
+            return session.ExecuteSproc("NHANVIEN_ById", new OperandValue(IdNV));
+        }
+        public static System.Collections.Generic.ICollection<NHANVIEN_ByIdResult> ExecNHANVIEN_ByIdIntoObjects(Session session, int IdNV)
+        {
+            return session.GetObjectsFromSproc<NHANVIEN_ByIdResult>("NHANVIEN_ById", new OperandValue(IdNV));
+        }
+        public static XPDataView ExecNHANVIEN_ByIdIntoDataView(Session session, int IdNV)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("NHANVIEN_ById", new OperandValue(IdNV));
+            return new XPDataView(session.Dictionary, session.GetClassInfo(typeof(NHANVIEN_ByIdResult)), sprocData);
+        }
+        public static void ExecNHANVIEN_ByIdIntoDataView(XPDataView dataView, Session session, int IdNV)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("NHANVIEN_ById", new OperandValue(IdNV));
+            dataView.PopulateProperties(session.GetClassInfo(typeof(NHANVIEN_ByIdResult)));
+            dataView.LoadData(sprocData);
+        }
+        public static DevExpress.Xpo.DB.SelectedData ExecKHACHHANG_GetAll(Session session)
+        {
+            return session.ExecuteSproc("KHACHHANG_GetAll");
+        }
+        public static System.Collections.Generic.ICollection<KHACHHANG_GetAllResult> ExecKHACHHANG_GetAllIntoObjects(Session session)
+        {
+            return session.GetObjectsFromSproc<KHACHHANG_GetAllResult>("KHACHHANG_GetAll");
+        }
+        public static XPDataView ExecKHACHHANG_GetAllIntoDataView(Session session)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("KHACHHANG_GetAll");
+            return new XPDataView(session.Dictionary, session.GetClassInfo(typeof(KHACHHANG_GetAllResult)), sprocData);
+        }
+        public static void ExecKHACHHANG_GetAllIntoDataView(XPDataView dataView, Session session)
+        {
+            DevExpress.Xpo.DB.SelectedData sprocData = session.ExecuteSproc("KHACHHANG_GetAll");
+            dataView.PopulateProperties(session.GetClassInfo(typeof(KHACHHANG_GetAllResult)));
             dataView.LoadData(sprocData);
         }
     }

@@ -26,7 +26,7 @@ namespace QL_DatTiecNhaHang.QLDatTiecNhaHang
             set { SetPropertyValue<int>(nameof(IdLMA), ref fIdLMA, value); }
         }
         string fTenLMA;
-        [Size(200)]
+        [Size(50)]
         public string TenLMA
         {
             get { return fTenLMA; }

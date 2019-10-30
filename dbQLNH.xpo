@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<dataBaseObjectModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="83e72028-595d-41f2-b214-ae4eddb13411" namespace="QL_DatTiecNhaHang.QLDatTiecNhaHang" dataBaseShemaInfo="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" generateConnectionHelper="true" generateStoredProcedures="true" fieldNameCase="Unchanged" generateDefaultConstructors="false" generateClassesForViews="true" useNameOf="true" connectionStringName="DESKTOP-TC830C5_QLDatTiecNhaHang" xmlns="http://schemas.microsoft.com/dsltools/ORMDataModel">
+<dataBaseObjectModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="83e72028-595d-41f2-b214-ae4eddb13411" namespace="QL_DatTiecNhaHang.QLDatTiecNhaHang" dataBaseShemaInfo="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" generateConnectionHelper="true" generateStoredProcedures="true" fieldNameCase="Unchanged" generateDefaultConstructors="false" generateClassesForViews="true" useNameOf="true" connectionStringName="DESKTOP-TC830C5_QLDatTiecNhaHang" xmlns="http://schemas.microsoft.com/dsltools/ORMDataModel">
   <storedProcedures>
     <dataBaseObjectModelHasStoredProcedures Id="513e4e47-5584-4bc4-88fc-84516cdc067f">
       <storedProcedure Id="ef2708da-4f38-4d56-8fde-548ad5db8420" name="BOPHAN_Del">
         <arguments>
-          <storedProcedureHasArguments Id="f3d2987e-3e7b-405d-a80b-d94191a00a54">
-            <argument Id="1b3edad1-e20f-4259-adc3-a36d1b24f6ce" name="IdBP" columnType="Int32" virtualColumnType="Int32" />
+          <storedProcedureHasArguments Id="003c5185-4805-490b-9ca5-88f95d96be32">
+            <argument Id="c36da214-5c48-43ba-bc8f-ab8f9d935d63" name="IdBP" columnType="Int32" virtualColumnType="Int32" />
           </storedProcedureHasArguments>
         </arguments>
       </storedProcedure>
@@ -14,15 +14,15 @@
       <storedProcedure Id="c53e31a9-5d46-475c-b0d6-6643008da739" name="BOPHAN_Ins">
         <generalXpObject>
           <storedProcedureReferencesGeneralXpObject Id="58e12955-d903-445a-b054-bc1a4d9567df">
-            <resultXpObjectMoniker Id="b8061014-859d-49d9-be0e-b3efbee12016" />
+            <resultXpObjectMoniker Id="76a0edc1-385a-4687-9db4-10c59e9b44a2" />
           </storedProcedureReferencesGeneralXpObject>
         </generalXpObject>
         <arguments>
-          <storedProcedureHasArguments Id="1d4ee73e-ece6-476a-a9ec-7d38683a61a8">
-            <argument Id="0391fd6e-7939-4a87-9e57-5769b3a16c75" name="TenBP" virtualColumnType="String" />
+          <storedProcedureHasArguments Id="0b0abd08-4c12-405b-840d-b6529092b434">
+            <argument Id="627a0286-e588-4388-a0f0-c37b27c8ce6e" name="TenBP" virtualColumnType="String" />
           </storedProcedureHasArguments>
-          <storedProcedureHasArguments Id="650719cd-b4d6-4398-923d-51e460e13e4c">
-            <argument Id="a44a7c90-dec1-477e-816a-41a4015fd469" name="GhiChu" virtualColumnType="String" />
+          <storedProcedureHasArguments Id="67832605-0025-4955-929e-3d562df80c12">
+            <argument Id="2e5e9898-280a-46d5-9f24-b30bff3660c0" name="GhiChu" virtualColumnType="String" />
           </storedProcedureHasArguments>
         </arguments>
       </storedProcedure>
@@ -31,18 +31,18 @@
       <storedProcedure Id="f660652a-56da-44ad-873f-b61ad66addff" name="BOPHAN_Upd">
         <generalXpObject>
           <storedProcedureReferencesGeneralXpObject Id="397ab539-4cf2-476c-94f2-ec034c62b6c4">
-            <resultXpObjectMoniker Id="0b2f4587-7f23-4eea-b157-3dc632b8ec10" />
+            <resultXpObjectMoniker Id="fd589ede-ee85-40f9-a842-632700f3a68d" />
           </storedProcedureReferencesGeneralXpObject>
         </generalXpObject>
         <arguments>
-          <storedProcedureHasArguments Id="4f84c898-fb5f-44e9-8d8d-4f914e5349af">
-            <argument Id="f07dbc2a-b4a3-4880-bbbf-2d79a574bfa0" name="IdBP" columnType="Int32" virtualColumnType="Int32" />
+          <storedProcedureHasArguments Id="04e96bde-5bf7-484a-a64a-9af384866293">
+            <argument Id="9b7ed826-0fa9-4e89-9b77-8dc473b2f68b" name="IdBP" columnType="Int32" virtualColumnType="Int32" />
           </storedProcedureHasArguments>
-          <storedProcedureHasArguments Id="7b46eb80-1d2d-43b0-96b5-3d55b3c9f908">
-            <argument Id="22649eda-467a-4c64-b163-b43fc03db4e5" name="TenBP" virtualColumnType="String" />
+          <storedProcedureHasArguments Id="adab608b-a289-4ceb-8640-58ddd4db0c6a">
+            <argument Id="7b4474d8-443b-4b5b-9192-d7972fbcf8e1" name="TenBP" virtualColumnType="String" />
           </storedProcedureHasArguments>
-          <storedProcedureHasArguments Id="cddfb1d1-2227-4420-92b1-b23e2e80aa13">
-            <argument Id="f6cc25b0-e584-43ef-9e3d-e501e6a2df71" name="GhiChu" virtualColumnType="String" />
+          <storedProcedureHasArguments Id="d59c1f55-d5f7-43cc-ae26-f7b08094bb20">
+            <argument Id="83d51b4a-689a-4963-bc3e-6c24dabfb04c" name="GhiChu" virtualColumnType="String" />
           </storedProcedureHasArguments>
         </arguments>
       </storedProcedure>
@@ -55,11 +55,11 @@
           </storedProcedureReferencesGeneralXpObject>
         </generalXpObject>
         <arguments>
-          <storedProcedureHasArguments Id="e8372921-ac0a-4134-a00a-61ebe0dc6a0f">
-            <argument Id="d841b1b9-169d-4793-af5e-7476805cb51f" name="TenDangNhap" virtualColumnType="String" />
+          <storedProcedureHasArguments Id="5cd98b13-666f-4bc9-8e65-74300caacf19">
+            <argument Id="51cc9db6-e6c2-41e4-8f7e-e0bd0532cef2" name="TenDangNhap" virtualColumnType="String" />
           </storedProcedureHasArguments>
-          <storedProcedureHasArguments Id="d0e464df-031f-4f83-ad9e-fbd53cbbd381">
-            <argument Id="66eeebcd-3bd0-4a8e-b5f4-9c8b889b4919" name="MatKhau" virtualColumnType="String" />
+          <storedProcedureHasArguments Id="6cf416ce-deb1-4264-a603-822153793a8e">
+            <argument Id="6fc09538-ffda-4831-be2c-b8c27d051a27" name="MatKhau" virtualColumnType="String" />
           </storedProcedureHasArguments>
         </arguments>
       </storedProcedure>
@@ -67,8 +67,8 @@
     <dataBaseObjectModelHasStoredProcedures Id="f500f7c9-f411-4ba1-87be-87b5b27da995">
       <storedProcedure Id="3ece3d82-2ab3-4d55-a2df-4854dff48ff9" name="DICHVU_Del">
         <arguments>
-          <storedProcedureHasArguments Id="2ad0b5a9-6d25-4154-82b5-658394f717dd">
-            <argument Id="517b921e-2d26-4f5f-9435-8a7ba8daef22" name="IdDV" columnType="Int32" virtualColumnType="Int32" />
+          <storedProcedureHasArguments Id="26316560-d7c4-446f-a319-496560051680">
+            <argument Id="bf507cb0-af4a-4b17-a308-b5d396d4aff7" name="IdDV" columnType="Int32" virtualColumnType="Int32" />
           </storedProcedureHasArguments>
         </arguments>
       </storedProcedure>
@@ -77,23 +77,385 @@
       <storedProcedure Id="121ac212-1381-40cc-ada4-649a23e23414" name="DICHVU_Upd">
         <generalXpObject>
           <storedProcedureReferencesGeneralXpObject Id="1dfda792-e0d3-4eea-a37d-e60168a4805a">
-            <resultXpObjectMoniker Id="3debdab5-081f-4326-a7f8-d8aeea362354" />
+            <resultXpObjectMoniker Id="c4d8607f-689a-4db3-b73b-af89b72c8712" />
           </storedProcedureReferencesGeneralXpObject>
         </generalXpObject>
         <arguments>
-          <storedProcedureHasArguments Id="518ba3fe-df1d-43e3-b058-3ef6fdff235e">
-            <argument Id="34f407e9-21db-46d5-ba1e-a0ad361f573a" name="IdDV" columnType="Int32" virtualColumnType="Int32" />
+          <storedProcedureHasArguments Id="02f555b0-9876-49e2-a332-4e35a091c7f7">
+            <argument Id="e5fcbcb9-b172-4349-ba0e-fcf2d1d9ad60" name="IdDV" columnType="Int32" virtualColumnType="Int32" />
           </storedProcedureHasArguments>
-          <storedProcedureHasArguments Id="14c41b67-1f3e-4856-8799-b27467c5bfc5">
-            <argument Id="4b6ea33d-6d2d-40be-857f-e2ec8f71242f" name="TenDV" virtualColumnType="String" />
+          <storedProcedureHasArguments Id="3f1b98a4-376a-48d1-9827-0543f64f0f72">
+            <argument Id="fc6765a1-37d4-41da-ae79-cb7d9846d7fe" name="TenDV" virtualColumnType="String" />
           </storedProcedureHasArguments>
-          <storedProcedureHasArguments Id="6240f1cf-4246-4cc8-90a4-45ca70cba63d">
-            <argument Id="5f104d32-86b6-4c21-97d7-87a2f432d586" name="DonGiaDV" columnType="Decimal" virtualColumnType="Decimal" />
+          <storedProcedureHasArguments Id="3c3fe20c-1ded-490b-8872-ff15fd068cd2">
+            <argument Id="f74928ee-fef3-4619-af11-8d8565153ace" name="DonGiaDV" columnType="Decimal" virtualColumnType="Decimal" />
           </storedProcedureHasArguments>
-          <storedProcedureHasArguments Id="7a7b9abf-3a90-4c58-ba0c-4d4ecb8abc86">
-            <argument Id="81cdd2de-08ea-41c7-82e1-2280fa15f15e" name="GhiChu" virtualColumnType="String" />
+          <storedProcedureHasArguments Id="4fb296c1-3ba7-40ab-8c35-c20acbe4d9e7">
+            <argument Id="8d83c7e0-eb70-4de5-aa1d-d9da07ced139" name="GhiChu" virtualColumnType="String" />
           </storedProcedureHasArguments>
         </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="787f6691-c413-4594-a88e-53c71267e299">
+      <storedProcedure Id="ca406b65-5fa1-4c93-a73f-d9204f3ae1f1" name="COMBO_MONAN_Ins">
+        <arguments>
+          <storedProcedureHasArguments Id="2e19d4f0-0bab-4da9-bb69-c8f14803202e">
+            <argument Id="91e18cc1-c99b-48d3-93bb-65d87d846611" name="GhiChu" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="cc8f8e7d-5297-4c8f-9dbe-5904acb85ac8">
+      <storedProcedure Id="3d00c9fc-5d5b-4fda-81b0-77b1ee086148" name="COMBO_MONAN_Del">
+        <arguments>
+          <storedProcedureHasArguments Id="eab47a86-9fd5-4919-b8db-ea96230376d6">
+            <argument Id="6bdbb1d7-cc85-4ee5-a104-91926a6c70c1" name="IdCBMA" columnType="Int32" virtualColumnType="Int32" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="055c13dc-292a-422d-8dc5-cfe99a67c901">
+      <storedProcedure Id="03d1dcba-e523-479a-9889-e62ab7e09eb0" name="DODUNG_Ins">
+        <generalXpObject>
+          <storedProcedureReferencesGeneralXpObject Id="f1b59a95-2d5e-4c6c-8a79-0335bbda1dcd">
+            <resultXpObjectMoniker Id="e71f0849-8f32-48a2-abbc-72bc5929dd1c" />
+          </storedProcedureReferencesGeneralXpObject>
+        </generalXpObject>
+        <arguments>
+          <storedProcedureHasArguments Id="553aeccf-9eb7-4ad9-9cf3-c7fbd81f8d6f">
+            <argument Id="6e08976c-6a0f-4d93-836b-120605f8c868" name="TenDD" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+          <storedProcedureHasArguments Id="1d541fef-0bca-4b1c-8d2e-cd4cc16fa1b1">
+            <argument Id="73b6c135-fbd1-414f-a227-1fcc9708a8cd" name="ChiPhiDD" columnType="Decimal" virtualColumnType="Decimal" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="5d159a6b-b6ae-4113-87dd-a9a5a2d64218">
+      <storedProcedure Id="c5c95df5-0444-4cf1-b2d3-b280a35ce8c7" name="DODUNG_Upd">
+        <generalXpObject>
+          <storedProcedureReferencesGeneralXpObject Id="66617a1e-085a-4343-b94d-55cd8cb3f46f">
+            <resultXpObjectMoniker Id="31847b5f-a6a2-4625-a669-b5939b25036e" />
+          </storedProcedureReferencesGeneralXpObject>
+        </generalXpObject>
+        <arguments>
+          <storedProcedureHasArguments Id="180dc34c-c143-4a2f-9c01-5a4151784b2f">
+            <argument Id="c216c61f-977b-4bad-b923-33833d373d4f" name="IdDD" columnType="Int32" virtualColumnType="Int32" />
+          </storedProcedureHasArguments>
+          <storedProcedureHasArguments Id="39da882d-d96e-41a4-b888-6cd0cb95d924">
+            <argument Id="9ac9505b-b73c-4455-b434-c431f94b3953" name="TenDD" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+          <storedProcedureHasArguments Id="e8aacc66-8803-4169-a454-8f0a68c03f94">
+            <argument Id="43350512-6e79-47a1-bae3-36f1a4a58820" name="ChiPhiDD" columnType="Decimal" virtualColumnType="Decimal" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="bb67dc37-33c4-4391-a4b9-d176b57a699b">
+      <storedProcedure Id="2a6743c3-4489-4cb4-8c38-f2cbee00c083" name="DODUNG_Del">
+        <arguments>
+          <storedProcedureHasArguments Id="74fdf5db-a633-4715-be91-cfff1cf94e22">
+            <argument Id="bf7c7264-af0f-4232-8a22-01f5941b3298" name="IdDD" columnType="Int32" virtualColumnType="Int32" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="a5a336dc-75a0-4159-9168-18a284066c5d">
+      <storedProcedure Id="20c7a0a1-ec5c-4698-9703-7bbc86a8e714" name="DOUONG_Ins">
+        <generalXpObject>
+          <storedProcedureReferencesGeneralXpObject Id="8719217c-7d93-4440-8950-2fe6ad40dfeb">
+            <resultXpObjectMoniker Id="52b4c002-7446-4d0a-8d69-a4e3e10fbbf0" />
+          </storedProcedureReferencesGeneralXpObject>
+        </generalXpObject>
+        <arguments>
+          <storedProcedureHasArguments Id="138cd21b-5ef0-45f8-8277-89764b168de2">
+            <argument Id="0c0819a2-ed55-4574-9286-7903ff258587" name="TenDU" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+          <storedProcedureHasArguments Id="2dba8684-7901-4548-9ab6-e1eef7e23e86">
+            <argument Id="465ab5ec-3a1d-419f-a566-5e8050a43c2b" name="DVT" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+          <storedProcedureHasArguments Id="3dee3429-ec94-4df5-9a9a-02e01a92a640">
+            <argument Id="56e66dce-de20-4081-a5c8-7b2239ae2852" name="DonGia" columnType="Decimal" virtualColumnType="Decimal" />
+          </storedProcedureHasArguments>
+          <storedProcedureHasArguments Id="c7646f61-3eea-469e-b73e-4f5b4fb1ed7d">
+            <argument Id="07edabd5-5fec-4674-bc7a-43e40b95e115" name="DonGia_PS" columnType="Decimal" virtualColumnType="Decimal" />
+          </storedProcedureHasArguments>
+          <storedProcedureHasArguments Id="504deacb-304c-4c4d-bfbc-e79c8c180e18">
+            <argument Id="79686018-e3c8-4efc-a35d-24911e556287" name="GhiChu" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="419e70d5-1d7a-4c54-be26-6982c6283928">
+      <storedProcedure Id="743a7020-1774-4ccc-b41d-b5aefa892c09" name="DOUONG_Del">
+        <arguments>
+          <storedProcedureHasArguments Id="0189498d-7485-41a5-88c2-0a7ff27e5d4d">
+            <argument Id="517e618a-25d0-4a9f-b7de-623e982d7147" name="IdDU" columnType="Int32" virtualColumnType="Int32" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="75d4f0ad-07c4-420c-b7cb-eb26bc505fdb">
+      <storedProcedure Id="1b18aa6a-c2d6-47de-8045-6ebeeb4946bf" name="LOAIDOUONG_Ins">
+        <generalXpObject>
+          <storedProcedureReferencesGeneralXpObject Id="0d87bec0-01ed-42c8-880e-a8553f54ce09">
+            <resultXpObjectMoniker Id="d4679f3f-cd39-44e0-bd61-e13abcc621a3" />
+          </storedProcedureReferencesGeneralXpObject>
+        </generalXpObject>
+        <arguments>
+          <storedProcedureHasArguments Id="0f7d818c-3593-41e8-825c-9e407d5b9985">
+            <argument Id="b70342da-20bc-4ebc-a0d8-5532f3905d01" name="TenLDU" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+          <storedProcedureHasArguments Id="03d03c53-351c-4b96-a8a7-4a9548e1f449">
+            <argument Id="f1c81599-242f-4aa6-acec-cc8376fcd1e5" name="GhiChu" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="1ec603cb-0e09-4b93-9eb9-6df3b6bd2948">
+      <storedProcedure Id="5cc5bb55-d849-4fbd-8a8a-23abb3d23740" name="LOAIDOUONG_Upd">
+        <generalXpObject>
+          <storedProcedureReferencesGeneralXpObject Id="a0a8e7ba-a2c8-41ab-95a8-b4ac41b7c202">
+            <resultXpObjectMoniker Id="b1fa3b5e-2aea-4a63-8aee-de62fe2250bd" />
+          </storedProcedureReferencesGeneralXpObject>
+        </generalXpObject>
+        <arguments>
+          <storedProcedureHasArguments Id="ba187337-4cda-4519-8c91-82d7319c0ba6">
+            <argument Id="949ef3a9-459a-4d0b-9d1e-c720dfdae10b" name="IdLDU" columnType="Int32" virtualColumnType="Int32" />
+          </storedProcedureHasArguments>
+          <storedProcedureHasArguments Id="fb7675f2-ed3d-4ea7-b9ef-6e5829f98d3b">
+            <argument Id="2d1b0818-5cdb-47cf-9d7d-1bc396897c0a" name="TenLDU" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+          <storedProcedureHasArguments Id="af3c3837-5d17-4e89-97c0-46320a169a86">
+            <argument Id="27a94430-c8c4-4c1f-8cc3-47ed981903c8" name="GhiChu" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="cf4de60d-35dc-4756-a649-ae21e3dc406e">
+      <storedProcedure Id="c486c0db-df39-4a0a-9879-bd9646556234" name="LOAIDOUONG_Del">
+        <arguments>
+          <storedProcedureHasArguments Id="ac88e3fd-65fc-49cb-9a60-b79834d41761">
+            <argument Id="b6072fff-dca9-4e89-aac7-373c89454c48" name="IdLDU" columnType="Int32" virtualColumnType="Int32" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="28eee74e-b6f4-4835-bf9b-075c3147525c">
+      <storedProcedure Id="aa15951b-be74-4676-8081-5e5c3636fcdd" name="LOAIMONAN_Del">
+        <arguments>
+          <storedProcedureHasArguments Id="5b795512-b7f5-4f02-a228-e10605267989">
+            <argument Id="25be5a3f-8eb7-469b-b260-57e4846547a7" name="IdLMA" columnType="Int32" virtualColumnType="Int32" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="29474a53-98d3-4aeb-971c-1ae33a965b17">
+      <storedProcedure Id="afb8606c-7db0-4c81-a5a1-eae960f4fb92" name="LOAIMONAN_Upd">
+        <generalXpObject>
+          <storedProcedureReferencesGeneralXpObject Id="865ba122-60e5-4157-8fac-316f8ae2d8de">
+            <resultXpObjectMoniker Id="a67fa5cd-4ac9-47fa-acb4-dac606164e6a" />
+          </storedProcedureReferencesGeneralXpObject>
+        </generalXpObject>
+        <arguments>
+          <storedProcedureHasArguments Id="faca7489-3e22-4657-9137-ee7e4698b5c6">
+            <argument Id="ba3e6080-b870-4f71-ba16-f29e6f5a07e9" name="IdLMA" columnType="Int32" virtualColumnType="Int32" />
+          </storedProcedureHasArguments>
+          <storedProcedureHasArguments Id="7aff3ac3-3a2c-49f2-be1c-ec178cc756c8">
+            <argument Id="7c2394f6-2d89-4c70-af57-b00c9b484d77" name="TenLMA" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+          <storedProcedureHasArguments Id="dbf56d59-5a0b-4c70-bc42-b9d0d772e8b1">
+            <argument Id="3099be6f-f33b-4634-9daa-5bb94009d79e" name="GhiChu" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="32308ed1-3c83-4b2b-84f8-64883fe99cbd">
+      <storedProcedure Id="1006c397-513a-4bda-b6fb-852271e1cde9" name="LOAIMONAN_Ins">
+        <generalXpObject>
+          <storedProcedureReferencesGeneralXpObject Id="c2a2a2ee-0e8d-4e97-a176-170b8cbabc68">
+            <resultXpObjectMoniker Id="531d92da-e621-4504-84af-4cbbb53d78b9" />
+          </storedProcedureReferencesGeneralXpObject>
+        </generalXpObject>
+        <arguments>
+          <storedProcedureHasArguments Id="10ff134f-3824-4032-948a-3d873860d199">
+            <argument Id="1d1eff5a-1a45-4ec8-8332-5d59276a5a5d" name="TenLMA" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+          <storedProcedureHasArguments Id="51b8d0da-7674-4946-81ac-0e777a7bbc45">
+            <argument Id="f935cb77-0a62-43c1-a74b-b22d40458b06" name="GhiChu" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="16dfd870-b130-4995-bb5c-3859e795c2ca">
+      <storedProcedure Id="72c11de8-dfd3-41cc-9528-536213132543" name="LOAITIEC_Ins">
+        <generalXpObject>
+          <storedProcedureReferencesGeneralXpObject Id="5ae011f7-cec8-4dc7-8f57-3d52ef8ff879">
+            <resultXpObjectMoniker Id="2e328cad-17cd-4494-a56e-3643f477f513" />
+          </storedProcedureReferencesGeneralXpObject>
+        </generalXpObject>
+        <arguments>
+          <storedProcedureHasArguments Id="fc7f517f-5f2e-40aa-86fa-5cb97e16ac48">
+            <argument Id="16515263-0ab0-4334-a063-124a0e39e9b1" name="TenLT" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="250f3887-36fb-43ca-9359-c465780969fb">
+      <storedProcedure Id="12c4d95f-ed1b-466b-8075-07ef89f82514" name="LOAITIEC_Upd">
+        <generalXpObject>
+          <storedProcedureReferencesGeneralXpObject Id="5edd5c37-f801-4e9a-90fe-504251a37f19">
+            <resultXpObjectMoniker Id="5cf223a8-6a39-4298-9caf-07874e144953" />
+          </storedProcedureReferencesGeneralXpObject>
+        </generalXpObject>
+        <arguments>
+          <storedProcedureHasArguments Id="8efaa0d7-93f1-4988-90f1-23ede937736c">
+            <argument Id="5c26614e-11ad-4c22-975b-8c50d86568c5" name="IdLT" columnType="Int32" virtualColumnType="Int32" />
+          </storedProcedureHasArguments>
+          <storedProcedureHasArguments Id="43426e40-0dcd-4b1c-9708-b2979b944b47">
+            <argument Id="1342a498-e227-437e-bdf5-228de30175a9" name="TenLT" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="ac446ad2-070b-438d-87c3-46cbbe61cf24">
+      <storedProcedure Id="7c1bfffd-23e7-4047-96e7-714d9747be45" name="LOAITIEC_Del">
+        <arguments>
+          <storedProcedureHasArguments Id="af8ae03a-6c56-4a85-86e0-1d6dba58b4e2">
+            <argument Id="d5f98843-eb4f-4a2a-883d-665831c709b6" name="IdLT" columnType="Int32" virtualColumnType="Int32" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="f424f8cc-cb91-4338-8482-3e24143d025c">
+      <storedProcedure Id="2de08bdf-c698-47cf-ac40-eaa90eabff0f" name="MANHINH_Ins">
+        <generalXpObject>
+          <storedProcedureReferencesGeneralXpObject Id="b1fbb79b-2a1c-4f65-839c-97513009bea9">
+            <resultXpObjectMoniker Id="f7e143f4-93b2-4541-8a75-093019ac7f21" />
+          </storedProcedureReferencesGeneralXpObject>
+        </generalXpObject>
+        <arguments>
+          <storedProcedureHasArguments Id="a3dc6e1d-272b-414b-a1e9-f6218505b8b6">
+            <argument Id="ccb58774-791e-4946-8c4d-650de18383f5" name="IdMH" columnType="Int32" virtualColumnType="Int32" />
+          </storedProcedureHasArguments>
+          <storedProcedureHasArguments Id="05d38c78-8f25-4715-a818-b629c1708f08">
+            <argument Id="b8069817-352c-42cd-8b06-9a911c6a5aea" name="TenMH" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="6fa38655-2d3f-4128-81f1-ab7c4c81b931">
+      <storedProcedure Id="ab575f37-35de-473d-a039-91291d34116c" name="MANHINH_Upd">
+        <generalXpObject>
+          <storedProcedureReferencesGeneralXpObject Id="ba2151e7-45ca-48ca-8dcf-443010c04ad8">
+            <resultXpObjectMoniker Id="22d6c931-cd02-4c88-bb56-ac0f6503447e" />
+          </storedProcedureReferencesGeneralXpObject>
+        </generalXpObject>
+        <arguments>
+          <storedProcedureHasArguments Id="048c04f5-fd17-420b-924f-e5c9e9a83600">
+            <argument Id="02768edf-7b58-4ffa-96f0-a88d41a060b1" name="IdMH" columnType="Int32" virtualColumnType="Int32" />
+          </storedProcedureHasArguments>
+          <storedProcedureHasArguments Id="d303d4f5-0165-4ed6-a4dc-b4f3014d8387">
+            <argument Id="ccb005df-c6b3-4c4f-a18e-df28a5ab4319" name="TenMH" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="ee937401-8436-47cc-9aac-b8bd157a59f6">
+      <storedProcedure Id="a7e1dabf-6961-4a2a-8881-bfa6fe41226b" name="MANHINH_Del">
+        <arguments>
+          <storedProcedureHasArguments Id="514cce71-b5fc-4795-acae-f46d7cfa435b">
+            <argument Id="f5f86a8a-7394-4b1f-afd0-03513109afe5" name="IdMH" columnType="Int32" virtualColumnType="Int32" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="4efbc4f1-7886-4d25-b9ea-4db45959e48f">
+      <storedProcedure Id="6953042e-62e2-4a69-b1da-fb6953911e5c" name="MONAN_Del">
+        <generalXpObject>
+          <storedProcedureReferencesGeneralXpObject Id="4750ef0a-a1c0-468d-8224-874d6d7f1bb9">
+            <resultXpObjectMoniker Id="fb2cf2a2-dfac-4136-afe2-fca40aec0660" />
+          </storedProcedureReferencesGeneralXpObject>
+        </generalXpObject>
+        <arguments>
+          <storedProcedureHasArguments Id="61e01cff-c4be-42e7-8dd6-2c8f89c3a65a">
+            <argument Id="dbbc288c-9723-456f-8a1c-a19f253678ca" name="IdMA" columnType="Int32" virtualColumnType="Int32" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="54050021-fb4e-44cb-8a73-6a9f0fdcdc67">
+      <storedProcedure Id="c2d9a9c2-e46c-45f0-9579-8fd7ad70330e" name="NGUOIDUNG_Del">
+        <arguments>
+          <storedProcedureHasArguments Id="6e5b1121-c0d1-4f0d-baf5-922998976c69">
+            <argument Id="43a7034a-fb56-4875-b88d-afe728400ec4" name="TenDangNhap" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="f54dda07-77fa-43e1-98e8-7c7911b84479">
+      <storedProcedure Id="db6b0dcb-8cb1-4d20-a1c9-b03fbc421fce" name="NHANVIEN_Del">
+        <arguments>
+          <storedProcedureHasArguments Id="6643b026-603e-42c0-9772-a157b009e1d5">
+            <argument Id="cd6df432-0fcd-47b3-b003-f4229c4dd25e" name="IdNV" columnType="Int32" virtualColumnType="Int32" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="ef1fad38-bcf0-478f-b51a-8053d9648662">
+      <storedProcedure Id="6792cb4a-4b77-4d09-a348-4a8aadcf9d8b" name="NHOMNGUOIDUNG_Del">
+        <arguments>
+          <storedProcedureHasArguments Id="17107e7b-5cd6-406f-a95f-02e298080693">
+            <argument Id="22dc6746-8032-4827-8610-cbbebc46f64a" name="IdNND" columnType="Int32" virtualColumnType="Int32" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="11f300be-afc0-4b4a-9112-b35a8e2834c4">
+      <storedProcedure Id="6118f8de-44ea-4d08-a6c6-6cf547532010" name="PHANQUYEN_HT">
+        <arguments>
+          <storedProcedureHasArguments Id="e5ef25bb-1a51-44ae-bcff-8be9e2ff0b45">
+            <argument Id="1c34ca69-d793-4e81-83b9-7b46120be357" name="IdNND" columnType="Int32" virtualColumnType="Int32" />
+          </storedProcedureHasArguments>
+          <storedProcedureHasArguments Id="1603f63c-4f37-44e5-bc86-34a1d8df3a96">
+            <argument Id="bd3db03a-6f43-4959-8898-14ef96e150d7" name="IdMH" columnType="Int32" virtualColumnType="Int32" />
+          </storedProcedureHasArguments>
+          <storedProcedureHasArguments Id="3ff8551c-fc3e-4d6b-b9e8-c42615545661">
+            <argument Id="196575ac-0f9d-45a2-bbed-f40a31fd5a2a" name="CoQuyen" columnType="Boolean" virtualColumnType="Boolean" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="08903097-77cd-44f0-bec8-76e7e8ec4290">
+      <storedProcedure Id="2fd05796-0cdc-458a-9607-44705d27871c" name="SANHTIEC_Del">
+        <arguments>
+          <storedProcedureHasArguments Id="e3b7fe7f-2e1b-4f96-ac6b-3259a3c9d966">
+            <argument Id="a5513bfd-c1f4-4e67-a21e-258b13f6f223" name="IdST" columnType="Int32" virtualColumnType="Int32" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="e5b9afba-2314-4bf4-87d2-0e8d207c4a9d">
+      <storedProcedure Id="a92b4822-04eb-418b-82b2-4c420ed219fa" name="NHANVIEN_ById">
+        <generalXpObject>
+          <storedProcedureReferencesGeneralXpObject Id="908a77d5-ea77-456a-8ad3-9a21fcd41b8d">
+            <resultXpObjectMoniker Id="c22ea60f-f538-4016-a064-614b2bdb0921" />
+          </storedProcedureReferencesGeneralXpObject>
+        </generalXpObject>
+        <arguments>
+          <storedProcedureHasArguments Id="206e8dac-6804-48a4-8b33-ee50c8418f51">
+            <argument Id="02a6e7b2-7180-4550-83cb-1ad1a78c2380" name="IdNV" columnType="Int32" virtualColumnType="Int32" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="91d1011f-1a1b-45d4-814c-95d9c4ce6eb2">
+      <storedProcedure Id="2cc5e44f-929c-4575-ad34-2dc4c3717de8" name="KHACHHANG_GetAll">
+        <generalXpObject>
+          <storedProcedureReferencesGeneralXpObject Id="f5473c2e-96b7-4f12-8222-24a99888fda3">
+            <resultXpObjectMoniker Id="96700b35-4ec0-4a1a-b109-fca702961c33" />
+          </storedProcedureReferencesGeneralXpObject>
+        </generalXpObject>
       </storedProcedure>
     </dataBaseObjectModelHasStoredProcedures>
   </storedProcedures>
@@ -591,7 +953,7 @@
             <field Id="aa84a08b-c55a-4b4a-a56a-30708cc01ff7" name="IdLDU" columnType="Int32" key="true" isIdentity="true" persistent="IdLDU" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
           <generalXpObjectHasFields Id="5a7887e6-7e1c-4f1f-8761-548170bea0aa">
-            <field Id="e93ccbb6-1252-479d-ad7b-4c7b694d1337" name="TenLDU" persistent="TenLDU" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="10" />
+            <field Id="e93ccbb6-1252-479d-ad7b-4c7b694d1337" name="TenLDU" persistent="TenLDU" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" />
           </generalXpObjectHasFields>
           <generalXpObjectHasFields Id="1f8e421e-a7c8-44a0-8d51-10daaededb1a">
             <field Id="428e08b7-71fa-4f28-943f-2d92a0654fdf" name="GhiChu" persistent="GhiChu" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="Unlimited" />
@@ -616,7 +978,7 @@
             <field Id="26441fff-f084-426f-9799-b3b771145a30" name="IdLMA" columnType="Int32" key="true" isIdentity="true" persistent="IdLMA" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
           <generalXpObjectHasFields Id="815bde8a-5812-4120-bc0c-0339e40510c8">
-            <field Id="ded94d79-12dc-4d70-a44e-d9fffe3b3faa" name="TenLMA" persistent="TenLMA" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="200" />
+            <field Id="ded94d79-12dc-4d70-a44e-d9fffe3b3faa" name="TenLMA" persistent="TenLMA" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" />
           </generalXpObjectHasFields>
           <generalXpObjectHasFields Id="70748347-a295-4034-9045-5a6d6a184f80">
             <field Id="fff08922-2534-4800-a92c-a0b6cea7993d" name="GhiChu" persistent="GhiChu" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="Unlimited" />
@@ -641,7 +1003,7 @@
             <field Id="26717808-33e5-4142-b252-fb64e6d498af" name="IdLT" columnType="Int32" key="true" isIdentity="true" persistent="IdLT" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
           <generalXpObjectHasFields Id="651a1556-0db8-48f8-b5e0-babd70941c6c">
-            <field Id="05095a1b-dddf-4bc5-a744-2116c9bab812" name="TenLT" persistent="TenLT" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="200" />
+            <field Id="05095a1b-dddf-4bc5-a744-2116c9bab812" name="TenLT" persistent="TenLT" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" />
           </generalXpObjectHasFields>
         </fields>
         <saTargets>
@@ -904,6 +1266,333 @@
         <fields>
           <generalXpObjectHasFields Id="21619b7d-8b5c-41ed-a32a-0375c9c06df3">
             <simpleField Id="455d193e-162b-4fd7-a50b-a1082c85bb25" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="f25faa6d-06e9-4f12-a59b-ba275211f889">
+      <resultXpObject Id="63ce87d2-307b-4268-9f51-10b0bafe593e" name="BOPHAN_InsResult1" virtualName="BOPHAN_InsResult1">
+        <fields>
+          <generalXpObjectHasFields Id="83a6b006-be14-405f-b338-4dc27f6f91ef">
+            <simpleField Id="0e092217-f315-4187-be5d-a22e81212c19" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="6c37d881-e7d7-4b5d-86a1-b5b8fe303bc6">
+      <resultXpObject Id="7f6933bd-6bb9-4cbe-b653-ce41bd512dea" name="BOPHAN_UpdResult1" virtualName="BOPHAN_UpdResult1">
+        <fields>
+          <generalXpObjectHasFields Id="cb4c3147-97af-4622-a112-8b79e8a6246c">
+            <simpleField Id="3bf6151e-2a7a-4fd4-a2eb-355b633de140" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="39641364-e739-4d75-902b-061ee3add500">
+      <resultXpObject Id="84cb2830-07d2-40ba-88d4-df08d293a3c5" name="DICHVU_UpdResult1" virtualName="DICHVU_UpdResult1">
+        <fields>
+          <generalXpObjectHasFields Id="88497ead-49fb-42b4-af94-557287ce375b">
+            <simpleField Id="d6367183-08fb-4263-a922-04fd51052f8e" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="c12ccdd5-e1ff-40c3-905a-8ea50af26958">
+      <resultXpObject Id="14af051c-9ff3-4339-a2b3-52bde25f5f51" name="DODUNG_InsResult" virtualName="DODUNG_InsResult">
+        <fields>
+          <generalXpObjectHasFields Id="77ef4125-1c42-42b0-b61e-a377b32b40ec">
+            <simpleField Id="c4625a03-fe12-4a5f-9ca3-0ef94254a7c6" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="568b27f9-e6a1-4898-97a3-1f1630837214">
+      <resultXpObject Id="c8dbf4c5-97d8-4786-8e0f-3a765fb51ddc" name="DODUNG_UpdResult" virtualName="DODUNG_UpdResult">
+        <fields>
+          <generalXpObjectHasFields Id="8914c231-1fc3-4316-a868-6315515f37f3">
+            <simpleField Id="42110255-10c3-4ee4-a9b0-53bebcc995b1" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="bb77caef-5afb-403a-9df1-318e814b9e4e">
+      <resultXpObject Id="88e8cb7a-0920-4321-803a-c5494878e035" name="DOUONG_InsResult" virtualName="DOUONG_InsResult">
+        <fields>
+          <generalXpObjectHasFields Id="c83ed7fd-3d89-4405-afbf-46a70064ac07">
+            <simpleField Id="62bf5511-1ac7-47be-8a59-ec26e9973908" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="9addf25f-6773-4ee1-a159-b7b16bf7577c">
+      <resultXpObject Id="6a207a2f-6361-4f22-88e7-28470d5f3b37" name="LOAIDOUONG_InsResult" virtualName="LOAIDOUONG_InsResult">
+        <fields>
+          <generalXpObjectHasFields Id="bc0072cf-88cf-4cb5-a756-da2c9a28fe8e">
+            <simpleField Id="79c8afb2-6340-481a-92aa-21ea6110d7b2" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="554fd94e-3445-487f-ab0d-b27c749e94f9">
+      <resultXpObject Id="6124817c-621c-46b1-90d7-4f93fbd69343" name="LOAIDOUONG_UpdResult" virtualName="LOAIDOUONG_UpdResult">
+        <fields>
+          <generalXpObjectHasFields Id="312d9d4c-0676-47f9-a1f3-67288dad62b7">
+            <simpleField Id="2f65c468-d921-46d3-8299-8e694d96d153" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="588a842f-0e99-48ca-b16b-f9336b2fecaa">
+      <resultXpObject Id="47d3f673-c753-4bc5-8618-9dbd999f13bd" name="LOAIMONAN_UpdResult" virtualName="LOAIMONAN_UpdResult">
+        <fields>
+          <generalXpObjectHasFields Id="4373cb72-46cc-4dcd-9e58-05babfcc895a">
+            <simpleField Id="0deb24ff-80f8-43ef-8886-c89c0fa2ad04" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="e237d492-1a6e-4f3c-982a-2d40618e2e41">
+      <resultXpObject Id="8836c66e-1fd4-4a30-a987-5e112668671b" name="LOAIMONAN_InsResult" virtualName="LOAIMONAN_InsResult">
+        <fields>
+          <generalXpObjectHasFields Id="16731f57-f8e8-43f3-ac3d-617d09ae2780">
+            <simpleField Id="99e4de10-3324-4472-81c8-4e5448f0d7f3" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="c24ee020-4be1-4f51-a1c9-b2e651b115d0">
+      <resultXpObject Id="5650b5c9-c7b0-4e97-9dd0-ebe51a301528" name="LOAITIEC_InsResult" virtualName="LOAITIEC_InsResult">
+        <fields>
+          <generalXpObjectHasFields Id="7c3276d0-22d3-4ffe-a144-55fa54320f04">
+            <simpleField Id="c2ffbca7-42b3-40cf-a183-fd62ad4c8bfe" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="3e86de66-c218-48b5-abbb-c6972243c946">
+      <resultXpObject Id="ae606bb7-a10f-401f-977e-808a5addfb5d" name="LOAITIEC_UpdResult" virtualName="LOAITIEC_UpdResult">
+        <fields>
+          <generalXpObjectHasFields Id="466a65ef-1976-45b5-b086-3f93fd81558f">
+            <simpleField Id="0cd2d896-5b09-4350-956c-3b9d319640f4" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="a9a21dd6-e785-49d5-9d84-f8c0c6276e08">
+      <resultXpObject Id="2851d149-2b89-4874-a1ee-ddd828199bb4" name="MANHINH_InsResult" virtualName="MANHINH_InsResult">
+        <fields>
+          <generalXpObjectHasFields Id="b4d09bbe-b57d-4261-9430-51c04d86cbdf">
+            <simpleField Id="efe7d6ac-ab5f-444d-9a1a-d0b76f506930" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="d7694b45-c418-4fd5-90fd-9bfbacaebf77">
+      <resultXpObject Id="5c4f88e4-3287-4308-90f5-e92ae3e0b99c" name="MANHINH_UpdResult" virtualName="MANHINH_UpdResult">
+        <fields>
+          <generalXpObjectHasFields Id="cc868643-0ad2-4ac7-a8d4-fc7a78a7ec89">
+            <simpleField Id="f50807fc-2fb1-4ea3-bf09-659cf7b86ff6" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="ea9980c3-ac9b-4778-87e7-7943f0c55415">
+      <resultXpObject Id="3e6c3eee-36d3-4687-9b05-32c255e1d69b" name="MONAN_DelResult" virtualName="MONAN_DelResult">
+        <fields>
+          <generalXpObjectHasFields Id="a49df5ae-94cd-4fec-a114-ed007d37b343">
+            <simpleField Id="ade44226-668f-4e6b-a6e4-99b0364f41ce" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="2226de16-3248-4147-a4ef-9eb5e6b13a0f">
+      <resultXpObject Id="c22ea60f-f538-4016-a064-614b2bdb0921" name="NHANVIEN_ByIdResult" virtualName="NHANVIEN_ByIdResult">
+        <fields>
+          <generalXpObjectHasFields Id="6d87c844-84a0-49cf-839c-f502c7439ab7">
+            <simpleField Id="53009ea1-7f64-40dc-ab5a-52c1b0e57af7" name="IdNV" columnType="Int32" virtualColumnType="Int32" persistent="IdNV" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="6b5d9e8c-9092-425c-b868-0b64f1fc3524">
+            <simpleField Id="b1c6f6e2-7a2e-4b55-b092-0bc123454a3a" name="HoTenNV" virtualColumnType="String" persistent="HoTenNV" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="ada619dc-039d-4ffe-b65e-34d0f54456a2">
+            <simpleField Id="ff8208d3-0815-45e6-8833-0bea8b5cd08a" name="NgaySinhNV" columnType="DateTime" virtualColumnType="DateTime" persistent="NgaySinhNV" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="e210b8cf-9f07-4638-a7fa-376c19f1181c">
+            <simpleField Id="483cf8ac-a227-4507-8354-39a8e529c9b9" name="GioiTinhNV" columnType="Boolean" virtualColumnType="Boolean" persistent="GioiTinhNV" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="17f27b09-c37b-4c87-8a0e-4f1d70cd047d">
+            <simpleField Id="cfbbaa92-b6be-4236-8ba5-cbaf73b342e1" name="DiaChiNV" virtualColumnType="String" persistent="DiaChiNV" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="3fae084a-ac31-4b7d-b51a-90aa808b27a0">
+            <simpleField Id="ddcade6a-bb82-419c-b998-c766fcd6a24f" name="DienThoaiNV" virtualColumnType="String" persistent="DienThoaiNV" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="10522fcf-3251-41fc-8398-a926d1fcc7be">
+            <simpleField Id="5bf8f81d-11bc-464e-b7b5-06e9d888dd65" name="GhiChuNV" virtualColumnType="String" persistent="GhiChuNV" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="0edb8e7a-3182-4018-a8d8-59b74a83e5dc">
+            <simpleField Id="3daf9db6-e4c1-45c1-910d-1384cf78b044" name="TenBP" virtualColumnType="String" persistent="TenBP" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="614963a5-dd00-4305-8cf2-657a765d7565">
+      <resultXpObject Id="76a0edc1-385a-4687-9db4-10c59e9b44a2" name="BOPHAN_InsResult2" virtualName="BOPHAN_InsResult2">
+        <fields>
+          <generalXpObjectHasFields Id="585f22f6-9eff-4607-b7e6-a26767a8b455">
+            <simpleField Id="f2cc45dd-142d-49d1-a3fb-920267219422" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="cc6b272a-70da-43c4-bcee-f0c77c3e3bee">
+      <resultXpObject Id="fd589ede-ee85-40f9-a842-632700f3a68d" name="BOPHAN_UpdResult2" virtualName="BOPHAN_UpdResult2">
+        <fields>
+          <generalXpObjectHasFields Id="ff1af7ac-0641-473e-a8d2-8db169a628b4">
+            <simpleField Id="04d5e705-d01b-41c7-8cdd-20c51919035f" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="b8be9d49-d4b2-4822-9839-bd2be68ab16a">
+      <resultXpObject Id="c4d8607f-689a-4db3-b73b-af89b72c8712" name="DICHVU_UpdResult2" virtualName="DICHVU_UpdResult2">
+        <fields>
+          <generalXpObjectHasFields Id="3ad10676-67a1-44c7-be0b-7c7f8581fb11">
+            <simpleField Id="3cf9d02d-53c6-4fb6-a308-1e59c9baa0ae" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="2d6b9e8d-b208-4c85-b96f-9d66a894ad86">
+      <resultXpObject Id="e71f0849-8f32-48a2-abbc-72bc5929dd1c" name="DODUNG_InsResult1" virtualName="DODUNG_InsResult1">
+        <fields>
+          <generalXpObjectHasFields Id="b6641077-8f80-447b-b094-0c594905046f">
+            <simpleField Id="967a06e5-9256-4b34-8b56-930880e2d94a" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="ece89e06-e827-43e2-af83-4fd8f34d0219">
+      <resultXpObject Id="31847b5f-a6a2-4625-a669-b5939b25036e" name="DODUNG_UpdResult1" virtualName="DODUNG_UpdResult1">
+        <fields>
+          <generalXpObjectHasFields Id="a3522430-052a-4de3-adda-194630bf6e79">
+            <simpleField Id="41025dce-74cd-4605-9a03-9e578ccf71a6" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="875f2e69-f3bb-4ff4-bd98-3e198253aa8e">
+      <resultXpObject Id="52b4c002-7446-4d0a-8d69-a4e3e10fbbf0" name="DOUONG_InsResult1" virtualName="DOUONG_InsResult1">
+        <fields>
+          <generalXpObjectHasFields Id="2b354307-8401-41a2-8fdb-3eab9e791160">
+            <simpleField Id="76a4f9b1-5a0b-4d04-93e3-cf2cec85158b" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="7e30530e-3f67-4663-bd4f-553186725cce">
+      <resultXpObject Id="d4679f3f-cd39-44e0-bd61-e13abcc621a3" name="LOAIDOUONG_InsResult1" virtualName="LOAIDOUONG_InsResult1">
+        <fields>
+          <generalXpObjectHasFields Id="f8b104bf-da39-4273-9a0f-11334293d150">
+            <simpleField Id="a702c63e-909c-4736-a4f1-f15f127446e2" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="58223cb7-56ef-4ae8-8251-1b9f06b24732">
+      <resultXpObject Id="b1fa3b5e-2aea-4a63-8aee-de62fe2250bd" name="LOAIDOUONG_UpdResult1" virtualName="LOAIDOUONG_UpdResult1">
+        <fields>
+          <generalXpObjectHasFields Id="c33e18a0-6d6c-4bd3-87b5-ec09ff871ec0">
+            <simpleField Id="113690be-26ec-4f09-abdd-76c33c63092a" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="52ad0f5a-5cca-4574-b8a9-ba570dfd8dea">
+      <resultXpObject Id="a67fa5cd-4ac9-47fa-acb4-dac606164e6a" name="LOAIMONAN_UpdResult1" virtualName="LOAIMONAN_UpdResult1">
+        <fields>
+          <generalXpObjectHasFields Id="3f1cf8ce-e19d-4f6f-adc3-893f0d229ad4">
+            <simpleField Id="3330848a-e548-4f7e-b686-badee57ce84b" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="34c888df-90f0-4e94-964b-3d3a839f863b">
+      <resultXpObject Id="531d92da-e621-4504-84af-4cbbb53d78b9" name="LOAIMONAN_InsResult1" virtualName="LOAIMONAN_InsResult1">
+        <fields>
+          <generalXpObjectHasFields Id="9aa5b652-7e92-437a-adbf-cb3f975f6eba">
+            <simpleField Id="b69c7478-1ddd-4663-a14f-942e30525e79" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="2ea50c37-5ebc-4f30-9f38-bb3bddd9f572">
+      <resultXpObject Id="2e328cad-17cd-4494-a56e-3643f477f513" name="LOAITIEC_InsResult1" virtualName="LOAITIEC_InsResult1">
+        <fields>
+          <generalXpObjectHasFields Id="a8956dd3-652b-433f-880e-e0aaf2b37d4c">
+            <simpleField Id="23f751c9-2f29-4a26-ab50-c5379a1ef838" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="0c676883-e139-43a9-b2eb-8fc6616145fb">
+      <resultXpObject Id="5cf223a8-6a39-4298-9caf-07874e144953" name="LOAITIEC_UpdResult1" virtualName="LOAITIEC_UpdResult1">
+        <fields>
+          <generalXpObjectHasFields Id="4f352255-54fb-4b33-894d-c228048b40f1">
+            <simpleField Id="1d0b6778-55d8-4916-b369-e33668dbe194" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="89d7a0f5-f0d5-4b85-bafc-47afd08f5444">
+      <resultXpObject Id="f7e143f4-93b2-4541-8a75-093019ac7f21" name="MANHINH_InsResult1" virtualName="MANHINH_InsResult1">
+        <fields>
+          <generalXpObjectHasFields Id="e472432e-27f1-47ec-b726-a9c90afe87bf">
+            <simpleField Id="6eaa16e0-914a-4a7f-aed6-32e2a091f7b0" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="706b5bd3-222d-4819-8289-9a051e3d0e5e">
+      <resultXpObject Id="22d6c931-cd02-4c88-bb56-ac0f6503447e" name="MANHINH_UpdResult1" virtualName="MANHINH_UpdResult1">
+        <fields>
+          <generalXpObjectHasFields Id="71ddc3b3-faf7-4650-8fb4-9d3ce5084288">
+            <simpleField Id="7548f26f-9126-442c-bf15-4a7dc502931c" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="9b0b0d5c-9f57-48fc-9f26-4b3186a900f3">
+      <resultXpObject Id="fb2cf2a2-dfac-4136-afe2-fca40aec0660" name="MONAN_DelResult1" virtualName="MONAN_DelResult1">
+        <fields>
+          <generalXpObjectHasFields Id="64600466-4b72-44b1-b991-439fff4c7628">
+            <simpleField Id="8c586ac0-42d2-47b3-b939-6e3a2d5cecf8" name="P_ERROR" virtualColumnType="String" persistent="_ERROR" />
+          </generalXpObjectHasFields>
+        </fields>
+      </resultXpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="a92cb97e-1351-4dca-b9d0-53068b1bfa7b">
+      <resultXpObject Id="96700b35-4ec0-4a1a-b109-fca702961c33" name="KHACHHANG_GetAllResult" virtualName="KHACHHANG_GetAllResult">
+        <fields>
+          <generalXpObjectHasFields Id="1aca3124-cd0a-4f8d-9154-648155083a79">
+            <simpleField Id="f3726e33-fe1d-46e2-a30b-34eb6fe36630" name="HoTenKH" virtualColumnType="String" persistent="HoTenKH" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="271d3e67-7135-4cd8-9cfa-11acedaab4e6">
+            <simpleField Id="434bd64a-5ca9-42b7-9c80-44de13052be4" name="NgaySinhKH" virtualColumnType="String" persistent="NgaySinhKH" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="c8d21b77-a116-47fc-b4c8-f666da6aad81">
+            <simpleField Id="1a3fd7e3-be1c-425a-aa45-cf856cf807fd" name="GioiTinhKH" columnType="Boolean" virtualColumnType="Boolean" persistent="GioiTinhKH" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="fe3e313f-8cb8-4b13-bd7a-6c00d95b0b21">
+            <simpleField Id="2683a68e-1b6f-4fae-961f-d034965e0d78" name="DiaChiKH" virtualColumnType="String" persistent="DiaChiKH" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="269c7b54-6832-406d-be41-eb3b1871e90c">
+            <simpleField Id="88d96c03-26d3-467e-934b-7cfb00c40c39" name="DienThoaiKH" virtualColumnType="String" persistent="DienThoaiKH" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="4343f949-84f2-4e41-863d-9c450fa2bb0c">
+            <simpleField Id="60b9d97a-0991-4541-a99f-b5b28141a539" name="EmailKH" virtualColumnType="String" persistent="EmailKH" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="411a96b2-9431-4986-aa78-224612373288">
+            <simpleField Id="7f822767-2165-4446-8101-e4c97fd18412" name="GhiChu" virtualColumnType="String" persistent="GhiChu" />
           </generalXpObjectHasFields>
         </fields>
       </resultXpObject>
