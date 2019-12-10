@@ -77,6 +77,8 @@
             this.rbnStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.imgCollection = new DevExpress.Utils.ImageCollection(this.components);
             this.xTabMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.bbtnDatTiec = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerDataStorage1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerBarController1)).BeginInit();
@@ -129,9 +131,10 @@
             this.bbtnLoaiTiec,
             this.bbtnNhanVien,
             this.bbtnPhanQuyen,
-            this.bbtnTaoTaiKhoan});
+            this.bbtnTaoTaiKhoan,
+            this.bbtnDatTiec});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 30);
-            this.ribbonControl1.MaxItemId = 26;
+            this.ribbonControl1.MaxItemId = 27;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -330,7 +333,8 @@
             // ribbonPage2
             // 
             this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.rbpDanhMuc});
+            this.rbpDanhMuc,
+            this.ribbonPageGroup1});
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "Lễ tân";
             // 
@@ -435,6 +439,19 @@
             // 
             this.xTabMdiManager.MdiParent = this;
             // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbtnDatTiec);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "Đặt tiệc";
+            // 
+            // bbtnDatTiec
+            // 
+            this.bbtnDatTiec.Caption = "Đặt tiệc";
+            this.bbtnDatTiec.Id = 26;
+            this.bbtnDatTiec.Name = "bbtnDatTiec";
+            this.bbtnDatTiec.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbtnDatTiec_ItemClick);
+            // 
             // MainForm
             // 
             this.Appearance.BackColor = System.Drawing.Color.LightGray;
@@ -515,6 +532,8 @@
         private DevExpress.XtraBars.BarButtonItem bbtnNhanVien;
         private DevExpress.XtraBars.BarButtonItem bbtnPhanQuyen;
         private DevExpress.XtraBars.BarButtonItem bbtnTaoTaiKhoan;
+        private DevExpress.XtraBars.BarButtonItem bbtnDatTiec;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
     }
 }
 

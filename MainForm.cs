@@ -141,5 +141,11 @@ namespace QL_DatTiecNhaHang
             if (!isFormActive(new DishForm()))
                 createChildForm(new DishForm());
         }
+
+        private void bbtnDatTiec_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            if (!isFormActive(new BookingDetailForm()))
+                createChildForm(new BookingDetailForm());
+        }
     }
 }

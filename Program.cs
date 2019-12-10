@@ -23,7 +23,7 @@ namespace QL_DatTiecNhaHang
 
             LoginForm loginForm = new LoginForm();
             //Application.Run(loginForm);
-            Application.Run(new BookingDetailForm());
+            Application.Run(new MainForm());
 
         }
     }
