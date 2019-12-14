@@ -40,11 +40,14 @@
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.dichvuTableAdapter1 = new QL_DatTiecNhaHang.QLDatTiecNhaHangDataSetTableAdapters.DICHVUTableAdapter();
+            this.qlDatTiecNhaHangDataSet1 = new QL_DatTiecNhaHang.QLDatTiecNhaHangDataSet();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qlDatTiecNhaHangDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // simpleButton3
@@ -64,6 +67,7 @@
             this.simpleButton4.Size = new System.Drawing.Size(81, 43);
             this.simpleButton4.TabIndex = 37;
             this.simpleButton4.Text = "Xóa";
+            this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
             // simpleButton2
             // 
@@ -73,6 +77,7 @@
             this.simpleButton2.Size = new System.Drawing.Size(81, 43);
             this.simpleButton2.TabIndex = 36;
             this.simpleButton2.Text = "Thêm";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // simpleButton1
             // 
@@ -147,7 +152,7 @@
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(833, 416);
+            this.gridControl1.Size = new System.Drawing.Size(861, 416);
             this.gridControl1.TabIndex = 20;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -161,11 +166,20 @@
             this.labelControl2.TabIndex = 23;
             this.labelControl2.Text = "Đơn giá";
             // 
+            // dichvuTableAdapter1
+            // 
+            this.dichvuTableAdapter1.ClearBeforeFill = true;
+            // 
+            // qlDatTiecNhaHangDataSet1
+            // 
+            this.qlDatTiecNhaHangDataSet1.DataSetName = "QLDatTiecNhaHangDataSet";
+            this.qlDatTiecNhaHangDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // ExtraServiceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(833, 558);
+            this.ClientSize = new System.Drawing.Size(861, 558);
             this.Controls.Add(this.simpleButton3);
             this.Controls.Add(this.simpleButton4);
             this.Controls.Add(this.simpleButton2);
@@ -181,12 +195,12 @@
             this.Name = "ExtraServiceForm";
             this.Text = "ExtraServiceForm";
             this.Load += new System.EventHandler(this.ExtraServiceForm_Load);
-            //this.Click += new System.EventHandler(this.ExtraServiceForm_Click);
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qlDatTiecNhaHangDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,5 +220,7 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
+        private QLDatTiecNhaHangDataSetTableAdapters.DICHVUTableAdapter dichvuTableAdapter1;
+        private QLDatTiecNhaHangDataSet qlDatTiecNhaHangDataSet1;
     }
 }

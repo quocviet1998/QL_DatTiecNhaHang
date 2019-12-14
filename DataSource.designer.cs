@@ -66,9 +66,6 @@ namespace QL_DatTiecNhaHang
     partial void InsertDATTIEC(DATTIEC instance);
     partial void UpdateDATTIEC(DATTIEC instance);
     partial void DeleteDATTIEC(DATTIEC instance);
-    partial void InsertDICHVU(DICHVU instance);
-    partial void UpdateDICHVU(DICHVU instance);
-    partial void DeleteDICHVU(DICHVU instance);
     partial void InsertDODUNG(DODUNG instance);
     partial void UpdateDODUNG(DODUNG instance);
     partial void DeleteDODUNG(DODUNG instance);
@@ -108,6 +105,9 @@ namespace QL_DatTiecNhaHang
     partial void InsertSANHTIEC(SANHTIEC instance);
     partial void UpdateSANHTIEC(SANHTIEC instance);
     partial void DeleteSANHTIEC(SANHTIEC instance);
+    partial void InsertDICHVU(DICHVU instance);
+    partial void UpdateDICHVU(DICHVU instance);
+    partial void DeleteDICHVU(DICHVU instance);
     #endregion
 		
 		public DataSourceDataContext() : 
@@ -236,14 +236,6 @@ namespace QL_DatTiecNhaHang
 			}
 		}
 		
-		public System.Data.Linq.Table<DICHVU> DICHVUs
-		{
-			get
-			{
-				return this.GetTable<DICHVU>();
-			}
-		}
-		
 		public System.Data.Linq.Table<DODUNG> DODUNGs
 		{
 			get
@@ -345,6 +337,14 @@ namespace QL_DatTiecNhaHang
 			get
 			{
 				return this.GetTable<SANHTIEC>();
+			}
+		}
+		
+		public System.Data.Linq.Table<DICHVU> DICHVUs
+		{
+			get
+			{
+				return this.GetTable<DICHVU>();
 			}
 		}
 	}
@@ -2159,13 +2159,13 @@ namespace QL_DatTiecNhaHang
 		
 		private System.Nullable<int> _SL_DV_PS;
 		
-		private EntityRef<DICHVU> _DICHVU;
-		
 		private EntityRef<DODUNG> _DODUNG;
 		
 		private EntityRef<DOUONG> _DOUONG;
 		
 		private EntityRef<MONAN> _MONAN;
+		
+		private EntityRef<DICHVU> _DICHVU;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -2193,10 +2193,10 @@ namespace QL_DatTiecNhaHang
 		
 		public CT_PHATSINH()
 		{
-			this._DICHVU = default(EntityRef<DICHVU>);
 			this._DODUNG = default(EntityRef<DODUNG>);
 			this._DOUONG = default(EntityRef<DOUONG>);
 			this._MONAN = default(EntityRef<MONAN>);
+			this._DICHVU = default(EntityRef<DICHVU>);
 			OnCreated();
 		}
 		
@@ -2396,40 +2396,6 @@ namespace QL_DatTiecNhaHang
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DICHVU_CT_PHATSINH", Storage="_DICHVU", ThisKey="IdDV", OtherKey="IdDV", IsForeignKey=true)]
-		public DICHVU DICHVU
-		{
-			get
-			{
-				return this._DICHVU.Entity;
-			}
-			set
-			{
-				DICHVU previousValue = this._DICHVU.Entity;
-				if (((previousValue != value) 
-							|| (this._DICHVU.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._DICHVU.Entity = null;
-						previousValue.CT_PHATSINHs.Remove(this);
-					}
-					this._DICHVU.Entity = value;
-					if ((value != null))
-					{
-						value.CT_PHATSINHs.Add(this);
-						this._IdDV = value.IdDV;
-					}
-					else
-					{
-						this._IdDV = default(int);
-					}
-					this.SendPropertyChanged("DICHVU");
-				}
-			}
-		}
-		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DODUNG_CT_PHATSINH", Storage="_DODUNG", ThisKey="IdDD", OtherKey="IdDD", IsForeignKey=true)]
 		public DODUNG DODUNG
 		{
@@ -2528,6 +2494,40 @@ namespace QL_DatTiecNhaHang
 						this._IdMA = default(int);
 					}
 					this.SendPropertyChanged("MONAN");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DICHVU_CT_PHATSINH", Storage="_DICHVU", ThisKey="IdDV", OtherKey="IdDV", IsForeignKey=true)]
+		public DICHVU DICHVU
+		{
+			get
+			{
+				return this._DICHVU.Entity;
+			}
+			set
+			{
+				DICHVU previousValue = this._DICHVU.Entity;
+				if (((previousValue != value) 
+							|| (this._DICHVU.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._DICHVU.Entity = null;
+						previousValue.CT_PHATSINHs.Remove(this);
+					}
+					this._DICHVU.Entity = value;
+					if ((value != null))
+					{
+						value.CT_PHATSINHs.Add(this);
+						this._IdDV = value.IdDV;
+					}
+					else
+					{
+						this._IdDV = default(int);
+					}
+					this.SendPropertyChanged("DICHVU");
 				}
 			}
 		}
@@ -3143,196 +3143,6 @@ namespace QL_DatTiecNhaHang
 		{
 			this.SendPropertyChanging();
 			entity.DATTIEC = null;
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.DICHVU")]
-	public partial class DICHVU : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _IdDV;
-		
-		private string _TenDV;
-		
-		private decimal _DonGiaDV;
-		
-		private string _GhiChu;
-		
-		private EntitySet<CT_DT_DV> _CT_DT_DVs;
-		
-		private EntitySet<CT_PHATSINH> _CT_PHATSINHs;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnIdDVChanging(int value);
-    partial void OnIdDVChanged();
-    partial void OnTenDVChanging(string value);
-    partial void OnTenDVChanged();
-    partial void OnDonGiaDVChanging(decimal value);
-    partial void OnDonGiaDVChanged();
-    partial void OnGhiChuChanging(string value);
-    partial void OnGhiChuChanged();
-    #endregion
-		
-		public DICHVU()
-		{
-			this._CT_DT_DVs = new EntitySet<CT_DT_DV>(new Action<CT_DT_DV>(this.attach_CT_DT_DVs), new Action<CT_DT_DV>(this.detach_CT_DT_DVs));
-			this._CT_PHATSINHs = new EntitySet<CT_PHATSINH>(new Action<CT_PHATSINH>(this.attach_CT_PHATSINHs), new Action<CT_PHATSINH>(this.detach_CT_PHATSINHs));
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IdDV", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int IdDV
-		{
-			get
-			{
-				return this._IdDV;
-			}
-			set
-			{
-				if ((this._IdDV != value))
-				{
-					this.OnIdDVChanging(value);
-					this.SendPropertyChanging();
-					this._IdDV = value;
-					this.SendPropertyChanged("IdDV");
-					this.OnIdDVChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenDV", DbType="NVarChar(200) NOT NULL", CanBeNull=false)]
-		public string TenDV
-		{
-			get
-			{
-				return this._TenDV;
-			}
-			set
-			{
-				if ((this._TenDV != value))
-				{
-					this.OnTenDVChanging(value);
-					this.SendPropertyChanging();
-					this._TenDV = value;
-					this.SendPropertyChanged("TenDV");
-					this.OnTenDVChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DonGiaDV", DbType="Money NOT NULL")]
-		public decimal DonGiaDV
-		{
-			get
-			{
-				return this._DonGiaDV;
-			}
-			set
-			{
-				if ((this._DonGiaDV != value))
-				{
-					this.OnDonGiaDVChanging(value);
-					this.SendPropertyChanging();
-					this._DonGiaDV = value;
-					this.SendPropertyChanged("DonGiaDV");
-					this.OnDonGiaDVChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GhiChu", DbType="Text", UpdateCheck=UpdateCheck.Never)]
-		public string GhiChu
-		{
-			get
-			{
-				return this._GhiChu;
-			}
-			set
-			{
-				if ((this._GhiChu != value))
-				{
-					this.OnGhiChuChanging(value);
-					this.SendPropertyChanging();
-					this._GhiChu = value;
-					this.SendPropertyChanged("GhiChu");
-					this.OnGhiChuChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DICHVU_CT_DT_DV", Storage="_CT_DT_DVs", ThisKey="IdDV", OtherKey="IdDV")]
-		public EntitySet<CT_DT_DV> CT_DT_DVs
-		{
-			get
-			{
-				return this._CT_DT_DVs;
-			}
-			set
-			{
-				this._CT_DT_DVs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DICHVU_CT_PHATSINH", Storage="_CT_PHATSINHs", ThisKey="IdDV", OtherKey="IdDV")]
-		public EntitySet<CT_PHATSINH> CT_PHATSINHs
-		{
-			get
-			{
-				return this._CT_PHATSINHs;
-			}
-			set
-			{
-				this._CT_PHATSINHs.Assign(value);
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_CT_DT_DVs(CT_DT_DV entity)
-		{
-			this.SendPropertyChanging();
-			entity.DICHVU = this;
-		}
-		
-		private void detach_CT_DT_DVs(CT_DT_DV entity)
-		{
-			this.SendPropertyChanging();
-			entity.DICHVU = null;
-		}
-		
-		private void attach_CT_PHATSINHs(CT_PHATSINH entity)
-		{
-			this.SendPropertyChanging();
-			entity.DICHVU = this;
-		}
-		
-		private void detach_CT_PHATSINHs(CT_PHATSINH entity)
-		{
-			this.SendPropertyChanging();
-			entity.DICHVU = null;
 		}
 	}
 	
@@ -6026,6 +5836,196 @@ namespace QL_DatTiecNhaHang
 		{
 			this.SendPropertyChanging();
 			entity.SANHTIEC = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.DICHVU")]
+	public partial class DICHVU : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _IdDV;
+		
+		private string _TenDV;
+		
+		private decimal _DonGiaDV;
+		
+		private string _GhiChu;
+		
+		private EntitySet<CT_DT_DV> _CT_DT_DVs;
+		
+		private EntitySet<CT_PHATSINH> _CT_PHATSINHs;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdDVChanging(int value);
+    partial void OnIdDVChanged();
+    partial void OnTenDVChanging(string value);
+    partial void OnTenDVChanged();
+    partial void OnDonGiaDVChanging(decimal value);
+    partial void OnDonGiaDVChanged();
+    partial void OnGhiChuChanging(string value);
+    partial void OnGhiChuChanged();
+    #endregion
+		
+		public DICHVU()
+		{
+			this._CT_DT_DVs = new EntitySet<CT_DT_DV>(new Action<CT_DT_DV>(this.attach_CT_DT_DVs), new Action<CT_DT_DV>(this.detach_CT_DT_DVs));
+			this._CT_PHATSINHs = new EntitySet<CT_PHATSINH>(new Action<CT_PHATSINH>(this.attach_CT_PHATSINHs), new Action<CT_PHATSINH>(this.detach_CT_PHATSINHs));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IdDV", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int IdDV
+		{
+			get
+			{
+				return this._IdDV;
+			}
+			set
+			{
+				if ((this._IdDV != value))
+				{
+					this.OnIdDVChanging(value);
+					this.SendPropertyChanging();
+					this._IdDV = value;
+					this.SendPropertyChanged("IdDV");
+					this.OnIdDVChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenDV", DbType="NVarChar(200) NOT NULL", CanBeNull=false)]
+		public string TenDV
+		{
+			get
+			{
+				return this._TenDV;
+			}
+			set
+			{
+				if ((this._TenDV != value))
+				{
+					this.OnTenDVChanging(value);
+					this.SendPropertyChanging();
+					this._TenDV = value;
+					this.SendPropertyChanged("TenDV");
+					this.OnTenDVChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DonGiaDV", DbType="Money NOT NULL")]
+		public decimal DonGiaDV
+		{
+			get
+			{
+				return this._DonGiaDV;
+			}
+			set
+			{
+				if ((this._DonGiaDV != value))
+				{
+					this.OnDonGiaDVChanging(value);
+					this.SendPropertyChanging();
+					this._DonGiaDV = value;
+					this.SendPropertyChanged("DonGiaDV");
+					this.OnDonGiaDVChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GhiChu", DbType="Text", UpdateCheck=UpdateCheck.Never)]
+		public string GhiChu
+		{
+			get
+			{
+				return this._GhiChu;
+			}
+			set
+			{
+				if ((this._GhiChu != value))
+				{
+					this.OnGhiChuChanging(value);
+					this.SendPropertyChanging();
+					this._GhiChu = value;
+					this.SendPropertyChanged("GhiChu");
+					this.OnGhiChuChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DICHVU_CT_DT_DV", Storage="_CT_DT_DVs", ThisKey="IdDV", OtherKey="IdDV")]
+		public EntitySet<CT_DT_DV> CT_DT_DVs
+		{
+			get
+			{
+				return this._CT_DT_DVs;
+			}
+			set
+			{
+				this._CT_DT_DVs.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DICHVU_CT_PHATSINH", Storage="_CT_PHATSINHs", ThisKey="IdDV", OtherKey="IdDV")]
+		public EntitySet<CT_PHATSINH> CT_PHATSINHs
+		{
+			get
+			{
+				return this._CT_PHATSINHs;
+			}
+			set
+			{
+				this._CT_PHATSINHs.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_CT_DT_DVs(CT_DT_DV entity)
+		{
+			this.SendPropertyChanging();
+			entity.DICHVU = this;
+		}
+		
+		private void detach_CT_DT_DVs(CT_DT_DV entity)
+		{
+			this.SendPropertyChanging();
+			entity.DICHVU = null;
+		}
+		
+		private void attach_CT_PHATSINHs(CT_PHATSINH entity)
+		{
+			this.SendPropertyChanging();
+			entity.DICHVU = this;
+		}
+		
+		private void detach_CT_PHATSINHs(CT_PHATSINH entity)
+		{
+			this.SendPropertyChanging();
+			entity.DICHVU = null;
 		}
 	}
 }

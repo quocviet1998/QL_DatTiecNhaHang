@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLDatTiecNhaHang" Class="DataSourceDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="data source=DESKTOP-TC830C5;user id=sa;password=sa;initial catalog=QLDatTiecNhaHang;Persist Security Info=true" SettingsObjectName="QL_DatTiecNhaHang.Properties.Settings" SettingsPropertyName="QLDatTiecNhaHangConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-MI5N6JD\SQLEXPRESS;Initial Catalog=QLDatTiecNhaHang;Persist Security Info=True;User ID=sa" SettingsObjectName="QL_DatTiecNhaHang.Properties.Settings" SettingsPropertyName="QLDatTiecNhaHangConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.BOPHAN" Member="BOPHANs">
     <Type Name="BOPHAN">
       <Column Name="IdBP" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -99,10 +99,10 @@
       <Column Name="SL_MA_PS" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="SL_DD_PS" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="SL_DV_PS" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="DICHVU_CT_PHATSINH" Member="DICHVU" ThisKey="IdDV" OtherKey="IdDV" Type="DICHVU" IsForeignKey="true" />
       <Association Name="DODUNG_CT_PHATSINH" Member="DODUNG" ThisKey="IdDD" OtherKey="IdDD" Type="DODUNG" IsForeignKey="true" />
       <Association Name="DOUONG_CT_PHATSINH" Member="DOUONG" ThisKey="IdDU" OtherKey="IdDU" Type="DOUONG" IsForeignKey="true" />
       <Association Name="MONAN_CT_PHATSINH" Member="MONAN" ThisKey="IdMA" OtherKey="IdMA" Type="MONAN" IsForeignKey="true" />
+      <Association Name="DICHVU_CT_PHATSINH" Member="DICHVU" ThisKey="IdDV" OtherKey="IdDV" Type="DICHVU" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.DATTIEC" Member="DATTIECs">
@@ -127,16 +127,6 @@
       <Association Name="COMBO_MONAN_DATTIEC" Member="COMBO_MONAN" ThisKey="IdCBMA" OtherKey="IdCBMA" Type="COMBO_MONAN" IsForeignKey="true" />
       <Association Name="KHACHHANG_DATTIEC" Member="KHACHHANG" ThisKey="IdKH" OtherKey="IdKH" Type="KHACHHANG" IsForeignKey="true" />
       <Association Name="LOAITIEC_DATTIEC" Member="LOAITIEC" ThisKey="IdLT" OtherKey="IdLT" Type="LOAITIEC" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.DICHVU" Member="DICHVUs">
-    <Type Name="DICHVU">
-      <Column Name="IdDV" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="TenDV" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
-      <Column Name="DonGiaDV" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
-      <Column Name="GhiChu" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
-      <Association Name="DICHVU_CT_DT_DV" Member="CT_DT_DVs" ThisKey="IdDV" OtherKey="IdDV" Type="CT_DT_DV" />
-      <Association Name="DICHVU_CT_PHATSINH" Member="CT_PHATSINHs" ThisKey="IdDV" OtherKey="IdDV" Type="CT_PHATSINH" />
     </Type>
   </Table>
   <Table Name="dbo.DODUNG" Member="DODUNGs">
@@ -273,6 +263,16 @@
       <Column Name="GiaBanTiec_PS" Type="System.Decimal" DbType="Money" CanBeNull="true" />
       <Column Name="GhiChu" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
       <Association Name="SANHTIEC_CT_DT_ST" Member="CT_DT_STs" ThisKey="IdST" OtherKey="IdST" Type="CT_DT_ST" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DICHVU" Member="DICHVUs">
+    <Type Name="DICHVU">
+      <Column Name="IdDV" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenDV" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="DonGiaDV" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="GhiChu" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="DICHVU_CT_DT_DV" Member="CT_DT_DVs" ThisKey="IdDV" OtherKey="IdDV" Type="CT_DT_DV" />
+      <Association Name="DICHVU_CT_PHATSINH" Member="CT_PHATSINHs" ThisKey="IdDV" OtherKey="IdDV" Type="CT_PHATSINH" />
     </Type>
   </Table>
 </Database>

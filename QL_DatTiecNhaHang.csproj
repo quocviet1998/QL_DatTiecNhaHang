@@ -406,9 +406,6 @@
     <Compile Include="UC_DM.Designer.cs">
       <DependentUpon>UC_DM.cs</DependentUpon>
     </Compile>
-    <Compile Include="XMLClasses\XMLDichVu.cs" />
-    <Compile Include="XMLClasses\XMLDoUong.cs" />
-    <Compile Include="XMLClasses\XMLMonAn.cs" />
     <EmbeddedResource Include="BookingDetailForm.resx">
       <DependentUpon>BookingDetailForm.cs</DependentUpon>
     </EmbeddedResource>

@@ -76,78 +76,86 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
-            this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties.CalendarTimeProperties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(53, 30);
+            this.labelControl1.Location = new System.Drawing.Point(45, 24);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(41, 17);
+            this.labelControl1.Size = new System.Drawing.Size(32, 13);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Họ tên";
             // 
             // txtHoTen
             // 
-            this.txtHoTen.Location = new System.Drawing.Point(100, 27);
+            this.txtHoTen.Location = new System.Drawing.Point(86, 22);
+            this.txtHoTen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(203, 22);
+            this.txtHoTen.Size = new System.Drawing.Size(174, 20);
             this.txtHoTen.TabIndex = 1;
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(486, 64);
+            this.labelControl2.Location = new System.Drawing.Point(417, 52);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(55, 16);
+            this.labelControl2.Size = new System.Drawing.Size(47, 13);
             this.labelControl2.TabIndex = 4;
             this.labelControl2.Text = "Ngày sinh";
             this.labelControl2.Click += new System.EventHandler(this.labelControl2_Click);
             // 
             // txtDiaChi
             // 
-            this.txtDiaChi.Location = new System.Drawing.Point(547, 86);
+            this.txtDiaChi.Location = new System.Drawing.Point(469, 70);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(465, 22);
+            this.txtDiaChi.Size = new System.Drawing.Size(399, 20);
             this.txtDiaChi.TabIndex = 8;
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(501, 89);
+            this.labelControl4.Location = new System.Drawing.Point(429, 72);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(40, 17);
+            this.labelControl4.Size = new System.Drawing.Size(32, 13);
             this.labelControl4.TabIndex = 7;
             this.labelControl4.Text = "Địa chỉ";
             // 
             // txtDienThoai
             // 
-            this.txtDienThoai.Location = new System.Drawing.Point(100, 58);
+            this.txtDienThoai.Location = new System.Drawing.Point(86, 47);
+            this.txtDienThoai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDienThoai.Name = "txtDienThoai";
-            this.txtDienThoai.Size = new System.Drawing.Size(203, 22);
+            this.txtDienThoai.Size = new System.Drawing.Size(174, 20);
             this.txtDienThoai.TabIndex = 10;
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(33, 61);
+            this.labelControl5.Location = new System.Drawing.Point(28, 50);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(61, 17);
+            this.labelControl5.Size = new System.Drawing.Size(49, 13);
             this.labelControl5.TabIndex = 9;
             this.labelControl5.Text = "Điện thoại";
             // 
             // txtGhiChu
             // 
-            this.txtGhiChu.Location = new System.Drawing.Point(100, 118);
+            this.txtGhiChu.Location = new System.Drawing.Point(86, 96);
+            this.txtGhiChu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGhiChu.Name = "txtGhiChu";
-            this.txtGhiChu.Size = new System.Drawing.Size(912, 22);
+            this.txtGhiChu.Size = new System.Drawing.Size(782, 20);
             this.txtGhiChu.TabIndex = 12;
             // 
             // labelControl6
             // 
-            this.labelControl6.Location = new System.Drawing.Point(52, 121);
+            this.labelControl6.Location = new System.Drawing.Point(45, 98);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(42, 16);
+            this.labelControl6.Size = new System.Drawing.Size(35, 13);
             this.labelControl6.TabIndex = 11;
             this.labelControl6.Text = "Ghi chú";
             // 
@@ -156,8 +164,13 @@
             this.gridControl1.DataMember = "KHACHHANG";
             this.gridControl1.DataSource = this.qlDatTiecNhaHangDataSet1;
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gridControl1.Location = new System.Drawing.Point(0, 226);
+            // 
+            // 
+            // 
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl1.Location = new System.Drawing.Point(0, 170);
             this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemDateEdit1,
@@ -165,7 +178,7 @@
             this.repositoryItemCheckEdit1,
             this.repositoryItemTextEdit2,
             this.repositoryItemTextEdit3});
-            this.gridControl1.Size = new System.Drawing.Size(1140, 547);
+            this.gridControl1.Size = new System.Drawing.Size(977, 444);
             this.gridControl1.TabIndex = 13;
             this.gridControl1.UseDirectXPaint = DevExpress.Utils.DefaultBoolean.True;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -186,6 +199,7 @@
             this.colDienThoaiKH,
             this.colEmailKH,
             this.colGhiChu});
+            this.gridView1.DetailHeight = 284;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.Editable = false;
@@ -199,27 +213,30 @@
             // colHoTenKH
             // 
             this.colHoTenKH.FieldName = "HoTenKH";
-            this.colHoTenKH.MinWidth = 25;
+            this.colHoTenKH.MinWidth = 21;
             this.colHoTenKH.Name = "colHoTenKH";
             this.colHoTenKH.Visible = true;
             this.colHoTenKH.VisibleIndex = 0;
-            this.colHoTenKH.Width = 94;
+            this.colHoTenKH.Width = 81;
             // 
             // colNgaySinhKH
             // 
             this.colNgaySinhKH.ColumnEdit = this.repositoryItemDateEdit1;
             this.colNgaySinhKH.FieldName = "NgaySinhKH";
-            this.colNgaySinhKH.MinWidth = 25;
+            this.colNgaySinhKH.MinWidth = 21;
             this.colNgaySinhKH.Name = "colNgaySinhKH";
             this.colNgaySinhKH.Visible = true;
             this.colNgaySinhKH.VisibleIndex = 1;
-            this.colNgaySinhKH.Width = 94;
+            this.colNgaySinhKH.Width = 81;
             // 
             // repositoryItemDateEdit1
             // 
             this.repositoryItemDateEdit1.AutoHeight = false;
             this.repositoryItemDateEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            // 
+            // 
+            // 
             this.repositoryItemDateEdit1.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemDateEdit1.Mask.UseMaskAsDisplayFormat = true;
@@ -229,30 +246,30 @@
             // colGioiTinhKH
             // 
             this.colGioiTinhKH.FieldName = "GioiTinhKH";
-            this.colGioiTinhKH.MinWidth = 25;
+            this.colGioiTinhKH.MinWidth = 21;
             this.colGioiTinhKH.Name = "colGioiTinhKH";
             this.colGioiTinhKH.Visible = true;
             this.colGioiTinhKH.VisibleIndex = 2;
-            this.colGioiTinhKH.Width = 94;
+            this.colGioiTinhKH.Width = 81;
             // 
             // colDiaChiKH
             // 
             this.colDiaChiKH.FieldName = "DiaChiKH";
-            this.colDiaChiKH.MinWidth = 25;
+            this.colDiaChiKH.MinWidth = 21;
             this.colDiaChiKH.Name = "colDiaChiKH";
             this.colDiaChiKH.Visible = true;
             this.colDiaChiKH.VisibleIndex = 3;
-            this.colDiaChiKH.Width = 94;
+            this.colDiaChiKH.Width = 81;
             // 
             // colDienThoaiKH
             // 
             this.colDienThoaiKH.ColumnEdit = this.repositoryItemTextEdit3;
             this.colDienThoaiKH.FieldName = "DienThoaiKH";
-            this.colDienThoaiKH.MinWidth = 25;
+            this.colDienThoaiKH.MinWidth = 21;
             this.colDienThoaiKH.Name = "colDienThoaiKH";
             this.colDienThoaiKH.Visible = true;
             this.colDienThoaiKH.VisibleIndex = 4;
-            this.colDienThoaiKH.Width = 94;
+            this.colDienThoaiKH.Width = 81;
             // 
             // repositoryItemTextEdit3
             // 
@@ -265,20 +282,20 @@
             // colEmailKH
             // 
             this.colEmailKH.FieldName = "EmailKH";
-            this.colEmailKH.MinWidth = 25;
+            this.colEmailKH.MinWidth = 21;
             this.colEmailKH.Name = "colEmailKH";
             this.colEmailKH.Visible = true;
             this.colEmailKH.VisibleIndex = 5;
-            this.colEmailKH.Width = 94;
+            this.colEmailKH.Width = 81;
             // 
             // colGhiChu
             // 
             this.colGhiChu.FieldName = "GhiChu";
-            this.colGhiChu.MinWidth = 25;
+            this.colGhiChu.MinWidth = 21;
             this.colGhiChu.Name = "colGhiChu";
             this.colGhiChu.Visible = true;
             this.colGhiChu.VisibleIndex = 6;
-            this.colGhiChu.Width = 94;
+            this.colGhiChu.Width = 81;
             // 
             // repositoryItemTextEdit1
             // 
@@ -299,27 +316,30 @@
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(382, 156);
+            this.btnThem.Location = new System.Drawing.Point(327, 127);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(94, 46);
+            this.btnThem.Size = new System.Drawing.Size(81, 37);
             this.btnThem.TabIndex = 14;
             this.btnThem.Text = "Thêm";
             this.btnThem.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(501, 156);
+            this.btnXoa.Location = new System.Drawing.Point(429, 127);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(94, 46);
+            this.btnXoa.Size = new System.Drawing.Size(81, 37);
             this.btnXoa.TabIndex = 15;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(656, 156);
+            this.btnLuu.Location = new System.Drawing.Point(562, 127);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(94, 46);
+            this.btnLuu.Size = new System.Drawing.Size(81, 37);
             this.btnLuu.TabIndex = 16;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.Click += new System.EventHandler(this.simpleButton3_Click);
@@ -332,18 +352,20 @@
             // 
             this.groupControl1.Controls.Add(this.rdoNu);
             this.groupControl1.Controls.Add(this.rdoNam);
-            this.groupControl1.Location = new System.Drawing.Point(789, 19);
+            this.groupControl1.Location = new System.Drawing.Point(676, 15);
+            this.groupControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(159, 61);
+            this.groupControl1.Size = new System.Drawing.Size(136, 50);
             this.groupControl1.TabIndex = 18;
             this.groupControl1.Text = "Giới tính";
             // 
             // rdoNu
             // 
             this.rdoNu.AutoSize = true;
-            this.rdoNu.Location = new System.Drawing.Point(90, 28);
+            this.rdoNu.Location = new System.Drawing.Point(77, 23);
+            this.rdoNu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdoNu.Name = "rdoNu";
-            this.rdoNu.Size = new System.Drawing.Size(47, 21);
+            this.rdoNu.Size = new System.Drawing.Size(39, 17);
             this.rdoNu.TabIndex = 1;
             this.rdoNu.TabStop = true;
             this.rdoNu.Text = "Nữ";
@@ -352,9 +374,10 @@
             // rdoNam
             // 
             this.rdoNam.AutoSize = true;
-            this.rdoNam.Location = new System.Drawing.Point(12, 28);
+            this.rdoNam.Location = new System.Drawing.Point(10, 23);
+            this.rdoNam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdoNam.Name = "rdoNam";
-            this.rdoNam.Size = new System.Drawing.Size(57, 21);
+            this.rdoNam.Size = new System.Drawing.Size(46, 17);
             this.rdoNam.TabIndex = 0;
             this.rdoNam.TabStop = true;
             this.rdoNam.Text = "Nam";
@@ -362,26 +385,35 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(100, 90);
+            this.txtEmail.Location = new System.Drawing.Point(86, 73);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(203, 22);
+            this.txtEmail.Size = new System.Drawing.Size(174, 20);
             this.txtEmail.TabIndex = 19;
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(71, 93);
+            this.labelControl3.Location = new System.Drawing.Point(61, 76);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(23, 16);
+            this.labelControl3.Size = new System.Drawing.Size(18, 13);
             this.labelControl3.TabIndex = 20;
             this.labelControl3.Text = "Mail";
             // 
             // txtNgaySinh
             // 
-            this.txtNgaySinh.EditValue = null;
-            this.txtNgaySinh.Location = new System.Drawing.Point(547, 58);
+            this.txtNgaySinh.EditValue = new System.DateTime(2019, 11, 11, 0, 0, 0, 0);
+            this.txtNgaySinh.Location = new System.Drawing.Point(469, 47);
+            this.txtNgaySinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNgaySinh.Name = "txtNgaySinh";
+            // 
+            // 
+            // 
             this.txtNgaySinh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            // 
+            // 
+            // 
             this.txtNgaySinh.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtNgaySinh.Properties.DisplayFormat.FormatString = "";
@@ -389,14 +421,14 @@
             this.txtNgaySinh.Properties.EditFormat.FormatString = "";
             this.txtNgaySinh.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.txtNgaySinh.Properties.MaxValue = new System.DateTime(2019, 10, 30, 0, 0, 0, 0);
-            this.txtNgaySinh.Size = new System.Drawing.Size(203, 22);
+            this.txtNgaySinh.Size = new System.Drawing.Size(174, 20);
             this.txtNgaySinh.TabIndex = 5;
             // 
             // CustomerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1140, 773);
+            this.ClientSize = new System.Drawing.Size(977, 614);
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.groupControl1);
@@ -414,6 +446,7 @@
             this.Controls.Add(this.txtHoTen);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.txtNgaySinh);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CustomerForm";
             this.Text = "CustomerForm";
             this.Load += new System.EventHandler(this.CustomerForm_Load);
@@ -431,8 +464,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
-            this.groupControl1.ResumeLayout(false);
-            this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties)).EndInit();

@@ -83,6 +83,11 @@ namespace QL_DatTiecNhaHang
             
         }
 
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             //Show();

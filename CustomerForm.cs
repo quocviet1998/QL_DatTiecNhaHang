@@ -39,6 +39,7 @@ namespace QL_DatTiecNhaHang
         {
             khachhangTableAdapter1.Fill(qlDatTiecNhaHangDataSet1.KHACHHANG);
             //btnLuu.Enabled = false;
+            
         }
 
         private void simpleButton1_Click(object sender, EventArgs e) // button them

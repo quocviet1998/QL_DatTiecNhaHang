@@ -17,5 +17,10 @@ namespace QliDatTiec
         {
             InitializeComponent();
         }
+
+        private void OtherServiceForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
