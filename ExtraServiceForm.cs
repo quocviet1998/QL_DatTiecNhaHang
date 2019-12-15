@@ -19,7 +19,7 @@ namespace QL_DatTiecNhaHang
         public ExtraServiceForm()
         {
             InitializeComponent();
-            loadDB();
+            //loadDB();
         }
 
 
@@ -27,7 +27,7 @@ namespace QL_DatTiecNhaHang
         private void ExtraServiceForm_Load(object sender, EventArgs e)
         {
             
-            loadDB();
+            //loadDB();
         }
 
         private void loadDB()

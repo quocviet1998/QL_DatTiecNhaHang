@@ -29,6 +29,13 @@ namespace QL_DatTiecNhaHang
 
         }
 
+        private void loadDB()
+        {
+            monanTableAdapter1.Fill(qlDatTiecNhaHangDataSet1.MONAN);
+            //btnLuu.Enabled = false;
+
+        }
+
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
 
@@ -81,11 +88,6 @@ namespace QL_DatTiecNhaHang
             }
         }
 
-        private void loadDB()
-        {
-            monanTableAdapter1.Fill(qlDatTiecNhaHangDataSet1.MONAN);
-            //btnLuu.Enabled = false;
-
-        }
+       
     }
 }
